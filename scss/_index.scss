@@ -7,7 +7,7 @@
     background-size: cover;
     
     h1{
-        font-size: 72px;
+        font-size: 4.5rem;
     }
     h2{
         font-size: $font-l;
@@ -32,7 +32,7 @@
 
         li{
             font-size: $font-xl;
-            line-height: 72px;
+            line-height: 4.5rem;
             @include pc(){
                 font-size: $font-l;
             }
@@ -42,12 +42,21 @@
 }
 .content{
     .join{
-        padding: 0 150px;
+        padding: 0 9.375rem;
     }
     .count{
         color: $second;
         font-weight:bold;
-        font-size:50px ;
+        font-size:3.125rem ;
+        @include phone(){
+            font-size: 2rem;
+        }
+    }
+    .from_now{
+        font-size: 3rem;
+        @include phone(){
+            font-size: 1.5rem;
+        }
     }
 }
 .register{
