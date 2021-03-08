@@ -1,0 +1,83 @@
+.main{
+    background-image: url("../img/image5.png");
+    background-repeat: no-repeat;
+    max-width: 100%;
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+    
+    h1{
+        font-size: 72px;
+    }
+    h2{
+        font-size: $font-l;
+    }
+    .account{
+        width: 9px;
+        height: 19px;
+        background-color: $second;
+    }
+    
+    .description{
+        background-image: url("../img/blob.png");
+        background-position: center;
+        background-size: contain;
+        background-repeat:no-repeat;
+        max-width: 100%;
+        min-height: 100%;
+        padding: 15% 0 15% 18%;
+        @include pc(){
+            padding: 15% 0 15% 10%;
+        }
+
+        li{
+            font-size: $font-xl;
+            line-height: 72px;
+            @include pc(){
+                font-size: $font-l;
+            }
+        }
+    }
+    
+}
+.content{
+    .join{
+        padding: 0 150px;
+    }
+    .count{
+        color: $second;
+        font-weight:bold;
+        font-size:50px ;
+    }
+}
+.register{
+    .logo{
+        width: 72px;
+    }
+    .account{
+        width: 9px;
+        height: 19px;
+        background-color: $second;
+    }
+    .divider{
+        width: 100%;
+        height: 2px;
+        background-color: gray;
+    }
+}
+.login_line{
+    background-color: #00B900;
+    padding: 10px 0px;
+    transition: background-color 0.3s ;
+    &:hover{
+        background-color: #00AC00;
+    }
+}
+.login_facebook{
+    background-color: #2471E6;
+    padding: 10px 0px;
+    transition: background-color 0.3s ;
+    &:hover{
+        background-color: #146ADA;
+    }
+}
