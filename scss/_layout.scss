@@ -56,17 +56,19 @@ img{
     position: fixed;
     bottom: 10px;
     right: 10px;
-    width: 310px;
+    width: 240px;
     height: 160px;
     .dialog{
         background-image: url("../img/DialogBox.png");
+        background-repeat: no-repeat;
         display: flex;
         justify-content: center;
         align-items: center;
-        width:240px;
-        height: 100px;
+        width: 173px;
+        height: 65px;
         text-align: center;
-        line-height: 20px;
+        line-height: 20px;   
+        font-size: $font-s;
     }
     img{
         transition: filter 0.5s;
