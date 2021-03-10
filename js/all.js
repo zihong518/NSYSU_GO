@@ -1,5 +1,6 @@
-var register = document.getElementById('register');
-register.innerHTML += `
+var register=document.getElementById('register_all');
+register.innerHTML +=`
+<div class="modal fade register" id="register" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 <div class="modal-dialog modal-dialog-centered ">
         <div class="modal-content">
         <div class="text-end">
@@ -242,23 +243,26 @@ register.innerHTML += `
             </div>
         </div>
         </div>
-    </div>`;
+    </div>
+    </div>
 
-var confirm = document.getElementById('register_confirm')
-confirm.innerHTML +=`
-<div class="modal-dialog modal-dialog-centered ">
-<div class="modal-content">
-  <div class="text-end">
-      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-  </div>
-  <div class="modal-body mx-5 d-flex flex-column justify-content-center align-items-center">
-      <img src="img/check.png" alt="" class="w-25">
-      <p class="fs-1 my-3 fw-bold">註冊成功</p>
-      <p class="text-secondary my-1">待系統審核校友身分後，將會發信通知</p>
-      <a href="#" class="">
-          <div class="bg-second text-white py-3 px-5 mt-4 rounded-3">加入Line好友</div>
-      </a>
-  </div>
-</div>
-</div>
-`
+    <div class="modal fade register" id="register_confirm" tabindex="-1" aria-labelledby="register_confirm" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+        <div class="modal-content">
+            <div class="text-end">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body mx-5 d-flex flex-column justify-content-center align-items-center">
+                <img src="img/check.png" alt="" class="w-25">
+                <p class="fs-1 my-3 fw-bold">註冊成功</p>
+                <p class="text-secondary my-1">待系統審核校友身分後，將會發信通知</p>
+                <a href="#" class="">
+                    <div class="bg-second text-white py-3 px-5 mt-4 rounded-3">加入Line好友</div>
+                </a>
+            </div>
+            </div>
+        </div>
+    </div>
+    `
+    
+    ;
