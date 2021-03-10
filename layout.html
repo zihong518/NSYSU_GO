@@ -7,6 +7,7 @@
     <title>中山購NSYSUGO</title>
     <link rel="stylesheet" href="css/all.min.css">
     <script src="https://kit.fontawesome.com/04ee868bb6.js" crossorigin="anonymous"></script>
+    <script src="js/all.js"></script>
 </head>
 <body>
     <header class="container-fluid bg-main header">
@@ -44,6 +45,8 @@
     <!-- Customization -->
     <div class="container my-5">
     </div>
+    <div class="modal fade register" id="register" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    </div>
     
     <!-- footer -->
     <footer>
@@ -70,7 +73,7 @@
                                 <input type="email" class="form-control cus_shadow email py-2" placeholder="enter your email address" aria-label="Username" aria-describedby="basic-addon1">
                             </div>
                             <div class="col-lg-5 col-6 mt-lg-0 mt-2 text-lg-start text-center">
-                                <button type="button" class="btn btn-second  cus_shadow" data-bs-toggle="modal" data-bs-target="#register">立即註冊</button>
+                                <button type="button" class="btn btn-second  cus_shadow" data-bs-toggle="modal" data-bs-target="#register" onclick="resgister()">立即註冊</button>
                             </div>
                         </div>
                     </div>
@@ -79,12 +82,11 @@
         </div>
     </footer>
       <!-- line 加好友 -->
-    <div class="line_fixed ">
+      <div class="line_fixed ">
         <!-- <img src="img/DialogBox.png" alt="" class="DoalogBox" > -->
-        <p class="dialog fw-bolder position-absolute bottom-0 start-0 pb-1 d-flex justify-content-center align-items-end" >點我加入Line官方帳號<br>獲得最新資訊</p>
+        <p class="dialog fw-bolder position-absolute bottom-0 start-0 pb-1 d-lg-flex justify-content-center align-items-end" >點我加入Line官方帳號<br>獲得最新資訊</p>
         <a href="#">
             <img src="img/Line.png" alt="" class="position-absolute bottom-0 end-0 border-2 cus_shadow">
-            <!-- <span class="position-absolute bottom-0 start-50 translate-middle badge rounded-pill bg-second d-lg-none d-block">點我加入Line好友➡</span> -->
         </a>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
