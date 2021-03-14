@@ -62,15 +62,18 @@ img{
         background-image: url("../img/DialogBox.png");
         background-repeat: no-repeat;
         background-position: bottom;
-        display: flex;
+        display: none;
         justify-content: start;
-        align-items: center;
+        align-items: flex-end;
         width: 173px;
         height: 65px;
         text-align: center;
         line-height: 20px;   
         font-size: $font-s;
         vertical-align: bottom;
+        &:hover{
+            display: none;
+        }
     }
     img{
         transition: filter 0.5s;
