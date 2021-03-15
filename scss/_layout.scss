@@ -42,14 +42,22 @@ img{
     
      
 }
-.line{
+.fa-line{
         &:hover{
-            color: #00B900 !important;
+            color: #474D62  !important;
         }
     }
-.email{
+.line{
+    color: #00B900 !important;
+    transition: filter 0.5s;
+        &:hover{
+            filter: drop-shadow(0px 0px 5px rgba(47, 88, 107, 0.5));
+            color: #00B900   !important;
+        }
+}
+.fa-envelope{
     &:hover{
-        color: #D76C75 !important;
+        color: #474D62 !important;
     }
 }
 .line_fixed{
@@ -73,12 +81,6 @@ img{
         vertical-align: bottom;
         &:hover{
             display: none;
-        }
-    }
-    img{
-        transition: filter 0.5s;
-        &:hover{
-            filter: drop-shadow(0px 0px 10px rgba(47, 88, 107, 0.5));
         }
     }
 }

@@ -42,6 +42,18 @@
     }
     
 }
+.context{
+    width:500px;
+    @include pc(){
+        width: 400px;
+    }
+    @include pad(){
+        width: 400px;
+    }
+    @include phone(){
+        width: 280px;
+    }
+}
 .videobox{
     position: relative;
     width: 100%;
@@ -81,6 +93,9 @@
     padding: 7.5rem 0px;
     @include phone(){
         padding: 5.5rem 0px;
+    }
+    &_1{
+        padding: 6rem 0px;
     }
 }
 .bg-3{
