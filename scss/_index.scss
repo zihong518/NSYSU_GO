@@ -162,3 +162,11 @@
         background-color: #146ADA;
     }
 }
+.nsysu_box{
+    width: 330px;
+    padding: 0 10rem 0 0 ;
+    @include pad(){
+        padding: 0px;
+        width: 150px;
+    }
+}
