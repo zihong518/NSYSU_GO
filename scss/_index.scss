@@ -170,3 +170,10 @@
         width: 150px;
     }
 }
+#myChart{
+    max-width: 60%;
+    height: 500px; 
+    @include pad(){
+        max-width: 80%;
+    } 
+}

@@ -64,7 +64,8 @@ $colors: (
   "gray-dark":  $gray-800,
   "second":     $second,
   "color_main": $color_main,
-  "color_sec":     $color_sec
+  "color_sec":  $color_sec,
+  
 ) !default;
 // scss-docs-end colors-map
 
@@ -90,7 +91,9 @@ $theme-colors: (
   "dark":       $dark,
   "second":     $second,
   "color_main":     $color_main,
-  "color_sec":     $color_sec
+  "color_sec":     $color_sec,
+  "online" :      #92DAFA,
+  "offline" :   #F9EBD2
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -446,7 +449,8 @@ $font-sizes: (
   3: $h3-font-size,
   4: $h4-font-size,
   5: $h5-font-size,
-  6: $h6-font-size
+  6: $h6-font-size,
+  7: $font-size-base* 0.3
 ) !default;
 // scss-docs-end font-sizes
 
