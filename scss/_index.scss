@@ -164,7 +164,7 @@
 }
 .nsysu_box{
     width: 330px;
-    padding: 0 10rem 0 0 ;
+    padding: 0 0 0 10rem ;
     @include pad(){
         padding: 0px;
         width: 150px;
@@ -176,4 +176,54 @@
     @include pad(){
         max-width: 80%;
     } 
+}
+.alumni{
+    padding: 1px 0 0 0 ;
+}
+.button {
+	pointer-events: auto;
+	cursor: pointer;
+	background: #e7e7e7;
+	border: none;
+	padding: 0.7rem 1rem;
+	margin: 0;
+	font-size: inherit;
+	position: relative;
+	display: inline-block;
+}
+
+.button::before,
+.button::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.button--anthe {
+	color: #fff;
+	background: none;
+    &:before{
+        content: '';
+        background: #EF5254;
+        -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
+        clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
+        transition: clip-path 0.4s cubic-bezier(0.2, 1, 0.8, 1), -webkit-clip-path 0.4s cubic-bezier(0.2, 1, 0.8, 1);
+    }
+    &:hover{
+        &:before{
+        background: #ff4548;
+        -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+        clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    }}
+    span{
+        display: block;
+        mix-blend-mode: screen;
+        transition: transform 0.4s cubic-bezier(0.2, 1, 0.8, 1);
+    }
+    &:hover{
+        span{
+            transform: translate3d(-10px,0,0);
+        }
+    }
 }
