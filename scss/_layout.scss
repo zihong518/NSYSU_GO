@@ -53,6 +53,9 @@ img{
         &:hover{
             filter: drop-shadow(0px 0px 5px rgba(47, 88, 107, 0.5));
             color: #00B900   !important;
+            .dialog{
+                display: block;
+            }
         }
 }
 .fa-envelope{
@@ -78,10 +81,6 @@ img{
         text-align: center;
         line-height: 20px;   
         font-size: $font-s;
-        vertical-align: bottom;
-        &:hover{
-            display: none;
-        }
     }
 }
 

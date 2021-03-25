@@ -1,7 +1,6 @@
 .timeline {
-    padding: 5% 0px;
     li{
-        padding-bottom: 25px;
+        padding-bottom: 55px;
         border-radius: 10px;
         width: 50%;        
         position: relative;
@@ -16,11 +15,11 @@
             &::after{
                 content: "";
                 position: absolute;
-                top: 0;
+                top: 5px;
                 right: 0;
                 width: 1px;
                 height: 100%;
-                background-color: #000;
+                background-color: $color_main;
             }
             &::before {
                 //圓點
@@ -31,7 +30,7 @@
                 width: 20px;
                 height: 20px;
                 border-radius: 50%;
-                background-color: #000;
+                background-color: $color_main;
                 right: -10px; //基數列圓點位置
             }
             
@@ -39,12 +38,34 @@
         &:nth-child(even) {
             float: right;
             padding-left: 3.125rem;
-            &:last-child {
-                height: 50%; //最後一個偶數列下方空間
-            }
             &::before {
                 left: -10px; //偶數列圓點位置
             }
         }
+        &:nth-last-child(2){
+            &::after{
+                width: 0px;
+            }
+            padding-bottom: 0px;
+        }
+        &:last-child(){
+            padding-bottom: 0px;
+        } 
+
     }
+}
+#myChart{
+    width: 100%;
+    height: 100% !important;
+    @include pad(){
+        max-width: 80%;
+    } 
+}
+.border-color{
+    border-left:20px solid ;
+}
+.list{
+    list-style-position:inside;
+    list-style-type:disc;
+    height: 8.125rem;
 }

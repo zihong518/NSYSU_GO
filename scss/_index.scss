@@ -170,13 +170,7 @@
         width: 150px;
     }
 }
-#myChart{
-    max-width: 60%;
-    height: 500px; 
-    @include pad(){
-        max-width: 80%;
-    } 
-}
+
 .alumni{
     padding: 1px 0 0 0 ;
 }
