@@ -1,0 +1,98 @@
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.header{
+
+    .nav-link{
+        font-size: $font-m;
+        color: black;
+        &:hover{
+            color: $second;   
+        }
+    }
+    .logo_hover{
+        transition: filter 0.3s;
+        &:hover{
+            filter:drop-shadow(2px 2px 2px rgba(47, 88, 107, 0.3));
+        }
+    }
+    .navbar-toggler{
+        &:focus{
+            box-shadow:0 0 0 0rem;
+        }
+        &:active{
+            background-color: #fff;
+        }
+    }
+    @include pc(){
+        .nav-item{
+            border{
+                border-style: solid;
+            }
+            &:hover{
+                background-color: #fff;
+            }
+        }
+    }
+    
+
+}
+.footer{
+    &_title{
+        font-size:$font-xl;
+    }
+    &_second{
+        font-size: $font-m;
+    }
+    
+     
+}
+.fa-line{
+        &:hover{
+            color: #474D62  !important;
+        }
+    }
+.line{
+    color: #00B900 !important;
+    transition: filter 0.5s;
+        &:hover{
+            filter: drop-shadow(0px 0px 5px rgba(47, 88, 107, 0.5));
+            color: #00B900   !important;
+            .dialog{
+                display: block;
+            }
+        }
+}
+.fa-envelope{
+    &:hover{
+        color: #474D62 !important;
+    }
+}
+.line_fixed{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 230px;
+    height: 70px;
+    .dialog{
+        background-image: url("../img/DialogBox.png");
+        background-repeat: no-repeat;
+        background-position: bottom;
+        display: none;
+        justify-content: start;
+        align-items: flex-end;
+        width: 173px;
+        height: 65px;
+        text-align: center;
+        line-height: 20px;   
+        font-size: $font-s;
+    }
+}
+footer{
+    input[type="email"] {
+        font-family: "GenSenRounded TW";
+        font-size: 12px;
+    }
+}

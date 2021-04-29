@@ -1,0 +1,97 @@
+.fundraising{
+    .fun_title{
+        background-image: url("../img/cover/cover.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 185px 0 260px 0;
+        h1{
+            font-size: 40px;
+            @include pc(){
+                font-size: 36px;
+            }
+            @include pad(){
+                font-size: 30px;
+            }
+            @include medium(){
+                margin-left: 0px;
+                font-size: 36px;
+            }
+            @include phone(){
+                font-size: 26px;
+            }
+        }
+        @include medium(){
+            display: block;
+            padding: 18% 0 260px 0;
+        }
+
+    }
+    .nsysu_box{
+        width: 40%;
+        max-width: 50%;
+        position: absolute;
+        left: 55%;
+        top: -100%;
+        @include bigpc(){
+            width:auto;
+        }
+    }
+    .fun_main{
+        h2{
+            background-image: url("../img/material/paint_gradual.png");
+            background-repeat: no-repeat;
+            width: 100%;
+            max-width:800px;
+            min-height: 100%;
+            background-position: center;
+            background-size: cover;
+            padding: 40px 0 30px 0px;
+            @include phone(){
+                width: 100%;
+                padding: 20px 0 15px 0px;
+            }
+        }
+    }
+    .content{
+        background-image: url("../img/material/frame.png");
+        background-repeat: no-repeat;
+        max-width:95%;
+        min-height: 100%;
+        background-position: center;
+        background-size: contain;
+        @include pad(){
+            max-width: 100%;
+            background-size: cover;
+        }
+        p{
+            padding-top: 5rem ;
+            padding-bottom: 5.5rem ;
+            max-width:900px;
+            @include pc(){
+                max-width:750px;
+            }
+            @include pad(){
+                max-width: 90%;
+            }
+        }
+    }
+    .yellow-circle{
+        background-image: url("../img/material/circle_yellow.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 25% 13%;
+        font-size: 1.875rem;
+    }
+    .yellow-paint{
+        background-image: url("../img/material/paint_yellow.png");
+        background-repeat: no-repeat;
+        background-size: 30%;
+        background-position: center;
+        padding: 4% 0 5% 0;
+        @include phone(){
+            background-size: 50%;
+        }
+    }
+}

@@ -1,0 +1,75 @@
+.timeline {
+    li{
+        padding-bottom: 55px;
+        border-radius: 10px;
+        width: 50%;        
+        position: relative;
+        div{
+            height: 95px;
+        }
+        &:nth-child(odd) {
+
+            float: left;
+            text-align: end;
+            padding-right: 3.125rem;
+            &::after{
+                content: "";
+                position: absolute;
+                top: 5px;
+                right: 0;
+                width: 1px;
+                height: 100%;
+                background-color: $color_main;
+            }
+            &::before {
+                //圓點
+                content: "";
+                position: absolute;
+                top: 5px;
+                margin: auto;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background-color: $color_main;
+                right: -10px; //基數列圓點位置
+            }
+            
+        }
+        &:nth-child(even) {
+            float: right;
+            padding-left: 3.125rem;
+            &::before {
+                left: -10px; //偶數列圓點位置
+            }
+        }
+        &:nth-last-child(2){
+            &::after{
+                width: 0px;
+            }
+            padding-bottom: 0px;
+        }
+        &:last-child(){
+            padding-bottom: 0px;
+        } 
+
+    }
+}
+#myChart{
+    width: 100%;
+    height: 100% !important;
+    @include pad(){
+        max-width: 80%;
+    } 
+}
+.border-color{
+    border-left:20px solid ;
+}
+.list{
+    list-style-position:inside;
+    list-style-type:disc;
+}
+.team{
+    img{
+        width: 135px;
+    }
+}

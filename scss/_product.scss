@@ -1,0 +1,96 @@
+.product{
+    .pro_title{
+        background-image: url("../img/cover/cover.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 185px 0 260px 0;
+        h1{
+            font-size: 40px;
+            @include pc(){
+                font-size: 36px;
+            }
+            @include pad(){
+                font-size: 30px;
+            }
+            @include medium(){
+                margin-left: 0px;
+                font-size: 36px;
+            }
+            @include phone(){
+                font-size: 26px;
+            }
+        }
+        @include medium(){
+            background-image: url("../img/cover/cover.png");
+            display: block;
+            padding: 18% 0 260px 0;
+        }
+        .nsysu_box{
+            position: absolute;
+            top: -85%;
+            left: 65%;
+            width: 14%;
+            @include pc(){
+                left: 65%;
+                top: -50%;
+            }
+
+        }
+
+    }
+    .pro_main{
+        img{
+            margin-top: 20px;
+            @include pad(){
+                margin-top: 0px;
+            }
+        }
+    }
+
+    .content{
+        background-image: url("../img/material/frame.png");
+        background-repeat: no-repeat;
+        max-width:95%;
+        min-height: 100%;
+        background-position: center;
+        background-size: contain;
+        @include pad(){
+            max-width: 80%;
+            background-size: cover;
+        }
+        @include medium(){
+            max-width: 100%;
+            background-size: cover;
+        }
+        p{
+            padding-top: 5rem ;
+            padding-bottom: 5.5rem ;
+            max-width:900px;
+            @include pc(){
+                max-width:750px;
+            }
+            @include pad(){
+                max-width: 90%;
+            }
+        }
+    }
+    .yellow-circle{
+        background-image: url("../img/material/circle_yellow.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 25% 13%;
+        font-size: 1.875rem;
+    }
+    .white-paint{
+        background-image: url("../img/material/paint_white.png");
+        background-repeat: no-repeat;
+        background-size: 40%;
+        background-position: center;
+        padding: 0% 0 8% 0;
+        @include phone(){
+            background-size: 50%;
+        }
+    }
+}
