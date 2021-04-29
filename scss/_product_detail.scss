@@ -12,7 +12,7 @@
             img{
                 margin: 0 auto;
                 width: 356px;
-                object-fit: contain;
+                object-fit: cover;
                 @include pad(){
                     width: 100%;
                 }
@@ -21,11 +21,9 @@
         
         }
         .img-small{
-            
-        
             img{
                 width: 175px;
-                object-fit: contain;
+                object-fit: cover;
                 &:first-child{
                     margin-right: 6px;
                 } 

@@ -13281,8 +13281,8 @@ footer input[type="email"] {
 .product .product-info .img-main img {
   margin: 0 auto;
   width: 356px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (max-width: 991.5px) {
@@ -13293,8 +13293,8 @@ footer input[type="email"] {
 
 .product .product-info .img-small img {
   width: 175px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .product .product-info .img-small img:first-child {
