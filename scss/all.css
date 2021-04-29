@@ -13305,7 +13305,9 @@ footer input[type="email"] {
   .product .product-info .img-small img {
     width: 49%;
     max-width: 49%;
-    height: 100px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .product .product-info .img-small img:first-child {
     margin-right: 2%;

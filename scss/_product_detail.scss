@@ -17,8 +17,6 @@
                     width: 100%;
                 }
             }
-            
-        
         }
         .img-small{
             img{
@@ -30,7 +28,7 @@
                 @include pad(){
                     width: 49%;
                     max-width: 49%;
-                    height: 100px;
+                    height: fit-content;
                     &:first-child{
                         margin-right: 2%;
                     } 
