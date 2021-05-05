@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+ <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- Somehow I got an error, so I comment the title, just uncomment to show -->
+    <!-- <title>Circular Progress Bar | CodingNepal</title> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.3.0/snap.svg-min.js"></script>
+    <style>
+      svg{width:30%;}
+  </style>
+  </head>
+  <body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="contact-tab" data-bs-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+      </div>
+</body>
+</html>
+    <svg id="animated" viewbox="0 0 100 100">
+        <circle cx="50" cy="50" r="45" fill="#fff"/>
+        <path id="progress" stroke-linecap="round" stroke-width="5" stroke="#000" fill="none"
+              d="M50 10
+                 a 40 40 0 0 1 0 80
+                 a 40 40 0 0 1 0 -80">
+        </path>
+        <text id="count" x="50" y="50" text-anchor="middle" dy="7" font-size="20">50%</text>
+    </svg>
+  </body>
+  <script>
+    let count = document.getElementById('count')
+    
+    function valueNumber(id,startNumber,endNumber,duration){
+      if (startNumber === endNumber) return;
+      let range = endNumber-startNumber;
+      let current = startNumber;
+      let increment = endNumber > startNumber? 1 : -1;
+      const stepTime = Math.abs(Math.floor(duration / range));
+      const obj = document.getElementById(id);
+      let timer = setInterval(function() {
+        current += increment;
+        obj.innerHTML = current+"%";
+        if (current == endNumber) {
+            clearInterval(timer);
+        }
+      }, stepTime);
+    }
+    valueNumber("count",0, 100, 3000);
+
+var s = Snap('#animated');
+var progress = s.select('#progress');
+
+  progress.attr({strokeDasharray: '0, 251.2'});
+
+  Snap.animate(0,251.2, function( value ) {
+      progress.attr({ 'stroke-dasharray':value+',251.2'});
+  }, 3000);
+  </script>
+</html>

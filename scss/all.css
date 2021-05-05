@@ -4,7 +4,7 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+@import url("https://fonts.googleapis.com/earlyaccess/cwtexyen.css");
 :root {
   --bs-main: #A4B3E2;
   --bs-blue: #0d6efd;
@@ -193,7 +193,7 @@ blockquote {
 
 b,
 strong {
-  font-weight: bolder;
+  font-weight: 900;
 }
 
 small, .small {
@@ -8824,7 +8824,7 @@ fieldset:disabled .btn {
 }
 
 .fs-1 {
-  font-size: calc(1.425rem + 2.1vw) !important;
+  font-size: calc(1.375rem + 1.5vw) !important;
 }
 
 .fs-2 {
@@ -8876,7 +8876,7 @@ fieldset:disabled .btn {
 }
 
 .fw-bolder {
-  font-weight: bolder !important;
+  font-weight: 900 !important;
 }
 
 .text-lowercase {
@@ -12085,7 +12085,7 @@ fieldset:disabled .btn {
     font-size: 3.25rem !important;
   }
   .fs-1 {
-    font-size: 3rem !important;
+    font-size: 2.5rem !important;
   }
   .fs-2 {
     font-size: 2rem !important;
@@ -12100,7 +12100,7 @@ fieldset:disabled .btn {
     font-size: 3.25rem !important;
   }
   .fs-sm-1 {
-    font-size: 3rem !important;
+    font-size: 2.5rem !important;
   }
   .fs-sm-2 {
     font-size: 2rem !important;
@@ -12115,7 +12115,7 @@ fieldset:disabled .btn {
     font-size: 3.25rem !important;
   }
   .fs-md-1 {
-    font-size: 3rem !important;
+    font-size: 2.5rem !important;
   }
   .fs-md-2 {
     font-size: 2rem !important;
@@ -12130,7 +12130,7 @@ fieldset:disabled .btn {
     font-size: 3.25rem !important;
   }
   .fs-lg-1 {
-    font-size: 3rem !important;
+    font-size: 2.5rem !important;
   }
   .fs-lg-2 {
     font-size: 2rem !important;
@@ -13280,25 +13280,19 @@ footer input[type="email"] {
 
 .product .product-info .img-main img {
   margin: 0 auto;
-  width: 356px;
+  width: 90%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-@media (max-width: 991.5px) {
-  .product .product-info .img-main img {
-    width: 100%;
-  }
-}
-
 .product .product-info .img-small img {
-  width: 175px;
+  width: 44%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 .product .product-info .img-small img:first-child {
-  margin-right: 6px;
+  margin-right: 2%;
 }
 
 @media (max-width: 991.5px) {
@@ -13378,9 +13372,9 @@ footer input[type="email"] {
 @media (max-width: 991.5px) {
   .product .product-sentence img {
     margin: 20px 40px;
-    min-width: 130px;
-    height: 130px;
-    width: 130px;
+    min-width: 100px;
+    height: 100px;
+    width: 100px;
   }
 }
 
@@ -13434,12 +13428,23 @@ footer input[type="email"] {
 
 .list ul li {
   width: 200px;
+  cursor: pointer;
+  border-right: 3px solid black;
+}
+
+.list ul li:last-child {
+  border-right: unset;
 }
 
 @media (max-width: 575px) {
   .list ul li {
     max-width: 100px;
   }
+}
+
+.nav-pills .nav-link.active {
+  background-color: #EDBE6E !important;
+  color: white !important;
 }
 
 .product-detail .img-main {
@@ -13500,5 +13505,180 @@ footer input[type="email"] {
 .list-choose {
   padding-bottom: 5px;
   border-bottom: 2px solid black;
+}
+
+.product-contact .contact-person img {
+  border: 7px solid white;
+  padding: 6px;
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+}
+
+@media (max-width: 767.5px) {
+  .product-contact .contact-person img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+.product-contact .contact-bg {
+  border-radius: 60px;
+}
+
+.contact-senior .contact-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.funding-info .label {
+  font-size: 1.2rem;
+  color: #B5B3C2;
+  font-weight: bold;
+}
+
+.funding-info .now-info {
+  font-size: 2.7rem;
+  font-weight: bold;
+  margin: 0.5rem 0 0 0;
+}
+
+.funding-info .funding-share {
+  width: 49%;
+  border-radius: 16px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.funding-info .funding-share:first-child {
+  margin-right: 2%;
+}
+
+.funding-info .funding-share:last-child {
+  cursor: pointer;
+}
+
+.funding-info .funding-share:last-child:hover {
+  background-color: #B5B3C2;
+}
+
+.funding-info .who {
+  min-width: 3.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: #B5B3C2;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.funding-info .who:hover {
+  background-color: #5b5966;
+}
+
+.funding-info .date {
+  min-width: 3.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: #B5B3C2;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.funding-info .date:hover {
+  background-color: #5b5966;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.funding-info .date:hover .date-interval {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  display: block;
+}
+
+.funding-info .date-interval {
+  display: none;
+  left: 170px;
+  width: 135px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.funding-team {
+  border-radius: 60px;
+}
+
+.funding-team img {
+  border: 0.5rem solid white;
+  padding: 6px;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+}
+
+.feedback img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+
+.feedback .feedback-content {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.progress-circle {
+  width: 3.8rem;
+}
+
+.contact-proposer .contact-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.proposer-people .modal-content {
+  border-radius: 50px;
+}
+
+.proposer-people .proposer-photo {
+  border: 0.3rem solid white;
+  padding: 6px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.proposer-people .modal-header .btn-close {
+  margin: 0 !important;
+  right: 10px;
+}
+
+.facebook-hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.facebook-hover:hover {
+  color: #296fd8 !important;
+}
+
+.line-hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.line-hover:hover {
+  color: #55d869 !important;
 }
 /*# sourceMappingURL=all.css.map */
