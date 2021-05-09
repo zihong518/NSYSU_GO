@@ -12185,7 +12185,7 @@ fieldset:disabled .btn {
    v2.0 | 20110126
    License: none (public domain)
 */
-html, body, div, span, applet, object, iframe, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, blockquote, pre,
+html, body, div, span, applet, object, iframe, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp, small, .small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
@@ -12205,7 +12205,7 @@ time, mark, .mark, audio, video {
 }
 
 @media (max-width: 575px) {
-  html, body, div, span, applet, object, iframe, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, blockquote, pre,
+  html, body, div, span, applet, object, iframe, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, span, blockquote, pre,
   a, abbr, acronym, address, big, cite, code,
   del, dfn, em, img, ins, kbd, q, s, samp, small, .small, strike, strong, sub, sup, tt, var,
   b, u, i, center,
@@ -12904,6 +12904,184 @@ footer input[type="email"] {
           transform: translate3d(-10px, 0, 0);
 }
 
+.carousel-item {
+  height: 500px;
+}
+
+.carousel-item img {
+  height: 100%;
+}
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.bg-lightyellow {
+  background-color: #FCFBF9;
+}
+
+.text-decoration-color-red {
+  -webkit-text-decoration-color: red !important;
+          text-decoration-color: red !important;
+}
+
+.about-nsysugo .content-container {
+  height: 400px;
+}
+
+@media (max-width: 575px) {
+  .about-nsysugo .content-container {
+    height: 60vw;
+  }
+}
+
+.about-nsysugo .content {
+  padding: 0 20%;
+  top: 18%;
+  font-size: 1.7rem;
+}
+
+@media (max-width: 1399.5px) {
+  .about-nsysugo .content {
+    padding: 0 18%;
+    top: 20%;
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 1199.5px) {
+  .about-nsysugo .content {
+    padding: 0 15%;
+    top: 25%;
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 991.5px) {
+  .about-nsysugo .content {
+    padding: 0px 19%;
+    top: 15%;
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 767.5px) {
+  .about-nsysugo .content {
+    padding: 0px 19%;
+    top: 25%;
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .about-nsysugo .content {
+    padding: 0px 19%;
+    top: 10vw;
+  }
+  .about-nsysugo .content p, .about-nsysugo .content span {
+    font-size: 4vw;
+    width: 60vw;
+  }
+}
+
+.alumni-feedback img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  border: 0.3rem solid white;
+  padding: 6px;
+}
+
+.alumni-feedback .bg-feedback {
+  border-radius: 35px;
+}
+
+.success-case .case-bg {
+  background-color: rgba(0, 0, 0, 0.6);
+  background-image: url("../img/facialMask.jpg");
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.success-case .circle-white {
+  min-width: 800px;
+  width: 800px;
+  opacity: 0.75;
+}
+
+@media (max-width: 1199.5px) {
+  .success-case .circle-white {
+    min-width: 600px;
+    width: 600px;
+  }
+}
+
+@media (max-width: 991.5px) {
+  .success-case .circle-white {
+    min-width: 700px;
+    width: 700px;
+  }
+}
+
+@media (max-width: 767.5px) {
+  .success-case .circle-white {
+    min-width: 600px;
+    width: 600px;
+  }
+}
+
+@media (max-width: 575px) {
+  .success-case .circle-white {
+    min-width: 100vw;
+    width: 100vw;
+  }
+}
+
+.success-case .case-story {
+  top: 25%;
+  font-size: 1.7rem;
+  width: 500px;
+}
+
+@media (max-width: 1199.5px) {
+  .success-case .case-story {
+    width: 400px;
+    top: 22%;
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 991.5px) {
+  .success-case .case-story {
+    width: 400px;
+    top: 22%;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 767.5px) {
+  .success-case .case-story {
+    width: 380px;
+    top: 18%;
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .success-case .case-story {
+    width: 200px;
+    top: 10vw;
+  }
+  .success-case .case-story p {
+    font-size: 4vw;
+    width: 60vw;
+  }
+}
+
 .fundraising .fun_title {
   background-image: url("../img/cover/cover.png");
   background-position: center;
@@ -13576,7 +13754,7 @@ footer input[type="email"] {
 }
 
 .funding-info .who:hover {
-  background-color: #5b5966;
+  background-color: #F0C884;
 }
 
 .funding-info .date {
@@ -13592,7 +13770,7 @@ footer input[type="email"] {
 }
 
 .funding-info .date:hover {
-  background-color: #5b5966;
+  background-color: #F0C884;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }

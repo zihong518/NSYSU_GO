@@ -58,88 +58,30 @@
         </nav>
         </div>
     </header>
-    <div class="contact-proposer">
-        <div class="modal  fade  -" id="contact-proposer" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="btn-close float-end" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body ">
-                        <div class="text-center d-flex justify-content-start align-items-center">
-                            <h5 class="modal-title fs-2" id="exampleModalLabel">提案人：</h5>
-                            <img class="contact-photo cover mx-1" src="https://attach.setn.com/newsimages/2020/03/11/2450111-PH.jpg" alt="">
-                            <p class="fs-3">夏宗霖</p>
-                        </div>
-                        <form action="" class="mt-2">
-                            <label for="contact-context" class="d-block mb-2 fs-5"> 訊息內容：</label>
-                            <textarea name="contact-context" id=""  rows="10" class="w-100"></textarea>
-                            <button type="submit" class="btn btn-color_sec text-white mt-2 float-end">送出訊息</button>
-                        </form> 
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="proposer-people">
-        <div class="modal  fade  -" id="proposer-people" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                <div class="modal-content bg-yellow">
-                    <div class="modal-header position-relative ">
-                        <h5 class="modal-title fs-1 mx-auto fw-bold text-color_sec" id="exampleModalLabel">贊助者</h5>
-                        <button type="button" class="btn-close position-absolute  " data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body justify-content-center d-flex flex-column align-items-center">
-                        
-                        <div class="text-center d-flex justify-content-start align-items-center mb-3">  
-                            <img class="proposer-photo cover mx-1" src="https://attach.setn.com/newsimages/2020/03/11/2450111-PH.jpg" alt="">
-                            <div class="text-start ms-3 ">
-                                <p class="fs-3">夏宗霖</p>
-                                <p class="mt-1 fs-3">企業管理所 110 級</p>
-                            </div>
-                        </div>
-                        <div class="text-center d-flex justify-content-start align-items-center mb-3">  
-                            <img class="proposer-photo cover mx-1" src="https://attach.setn.com/newsimages/2020/03/11/2450111-PH.jpg" alt="">
-                            <div class="text-start ms-3 ">
-                                <p class="fs-3">夏宗霖</p>
-                                <p class="mt-1 fs-3">企業管理所 110 級</p>
-                            </div>
-                        </div>
-                        <div class="text-center d-flex justify-content-start align-items-center mb-3">  
-                            <img class="proposer-photo cover mx-1" src="https://attach.setn.com/newsimages/2020/03/11/2450111-PH.jpg" alt="">
-                            <div class="text-start ms-3 ">
-                                <p class="fs-3">夏宗霖</p>
-                                <p class="mt-1 fs-3">企業管理所 110 級</p>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    
-    
-    
+    <!-- 提案資訊 -->
     <div class="product">
-        <div class="container-xl	">
-			<!-- 產品資訊 -->
+        <div class="container-xl">
             <div class="row mt-5 funding-info justify-content-lg-start justify-content-center">
                 <div class="col-lg-12 col-sm-10 col-11 d-flex mb-4 align-items-center justify-content-center justify-content-lg-start flex-md-row flex-column">
+                    <!-- 提案主標 -->
                     <h1 class="fs-1 fw-bold">中山畢業歌「存曲」</h1>
+                    <!-- 提案副標 -->
                     <p class="fs-4 border-3 border px-3 py-1 text-secondary ms-3 mt-2 mt-md-0" style="border-radius: 10px;">一起做中山人的 MV</p>
                 </div>
-                <div class="col-lg-8  col-sm-10 col-11">
+                <div class="col-lg-7  col-sm-10 col-11">
                     <div class="ratio ratio-16x9">
+                        <!-- 提案照片 -->
                         <img class="" src="img/graduate_music.jpg" alt="">
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-10 col-12 ms-3 mt-5 mt-lg-0">
+                <div class="col-lg-4 col-sm-10 col-12 ms-3 mt-5 mt-lg-0">
                     <div>
-                        <p class="label">目標 NT ： $<span id="goalMoney">10000</span></p>
+                        <!-- 目標價格 -->
+                        <p class="label">目標 NT ： $ <span id="goalMoney">10000</span> </p>
                         <div class="d-flex justify-content-start align-items-center mt-2">
-                            <p  class="now-info">$<span id="nowMoney" class="now-info">2500</span> </p>
+                            <!-- 目前價格 -->
+                            <p  class="now-info">$ <span id="nowMoney" class="now-info">2500</span>  </p>
+                            <!-- 圖表 -->
                             <svg class="progress-circle ms-2" id="animated" viewbox="0 0 100 100"  >
                                 <circle cx="50" cy="50" r="45" fill="#fff"/>
                                 
@@ -164,19 +106,25 @@
                         <div class="mt-4">
                             <p class="label">贊助人</p>
                             <div class="d-flex justify-content-start align-items-center">
-                                <p class="now-info d-inline">35人</p> 
-                                <span class="ms-4 who d-flex justify-content-center align-items-center fs-3 fw-bold text-white" data-bs-toggle="modal" data-bs-target="#proposer-people">誰</span>
+                                <!-- 目前贊助人 -->
+                                <p class="now-info d-inline"> <span>35</span>人</p> 
+                                <span class="ms-4 who d-flex justify-content-center align-items-center fs-3 fw-bold text-white" data-bs-toggle="modal" data-bs-target="#sponsor-people">誰</span>
                             </div>
     
                         </div>
                         <div class="mt-4 ms-5 ms-lg-0">
                             <p class="label">募資倒數</p>
                             <div class="d-flex justify-content-start align-items-center position-relative">
-                                <p class="now-info">23天</p> 
+                                <!-- 倒數天數 -->
+                                <p class="now-info"><span>23</span> 天</p> 
                                 <span class=" date-hover">
-                                    <span class="ms-4 date d-flex justify-content-center align-items-center fs-5  text-white">4/30
-                                        <span class="border px-3 fw-bold py-1 fs-5 position-absolute date-interval border-3 border-color_sec text-color_sec ">4/12 ~4/30</span>
-
+                                    <!-- 截止日期 -->
+                                    <span class="ms-4 date d-flex justify-content-center align-items-center fs-5  text-white">
+                                        4/30
+                                        <span class="border px-3 fw-bold py-1 fs-5 position-absolute date-interval border-3 border-color_sec text-color_sec ">
+                                            <!-- 日期區間 -->
+                                            4/12 00:00 ~ 4/30 23:59
+                                        </span>
                                     </span>
                                     
                                 </span>
@@ -186,6 +134,7 @@
                     
                     <div class="mt-4">
                         <p class="label">提案人</p>
+                        <!-- 提案人 -->
                         <p class="proposer  fs-4 my-3 fw-bold">企業管理所 110 級 夏宗麟</p>    
                     </div>
                     <button type="submit" class="btn btn-color_sec fs-3 text-white fw-bold mt-3 w-100" id="buy"> 贊助專案</button>
@@ -208,24 +157,26 @@
                 </div>
                    
             </div>
-			<!-- XX學長的話 -->
+			<!-- 提案人的話 -->
 			<div class="row product-sentence justify-content-center mt-5 ">
 				<div class=" col-xl-10 col-xxl-9 col-11 bg-yellow sentence-background d-flex flex-lg-row flex-column justify-content-center align-items-center">
-					<!-- 學長的大頭貼 -->
+					<!-- 提案人的照片 -->
                     <img class="cotain"  
 					src="https://attach.setn.com/newsimages/2020/03/11/2450111-PH.jpg" alt="">
+                    <!-- 提案人系級 -->
                     <span class=" fs-3 fw-bold text-dark mb-3 d-inline d-lg-none">EMBA 110  夏宗麟</span>
                     <div class="me-lg-4 me-0 text-center pb-lg-0 pb-5 d-flex justify-content-center align-items-center">
 						<div class="position-relative me-lg-3 me-0 text-white fw-bold d-flex justify-content-center justify-content-lg-start">
-							<!-- 學長的話 限64字 -->
                             <div class="d-flex flex-column justify-content-start align-items-lg-start">
+                                <!-- 提案主標 -->
                                 <h2 class="text-color_sec">一首歌，串起許多人青春年華的回憶</h2>
+                                <!-- 提案副標 -->
                                 <h2 class="fs-3 text-secondary fw-light">唱出只屬於中山人的記憶</h2>
                             </div>
 							
 							<div class="position-absolute comma-up" >”</div>
 							<div class="position-absolute comma-down" >”</div>
-                            <!-- 學長的名字 -->
+                            <!-- 提案人系級、名字 -->
 							<span class=" fs-4 sentence-name text-dark d-none d-lg-inline">MBA 110  夏宗麟</span>
 						</div>
 						
@@ -235,6 +186,7 @@
 			</div>
         </div>
     </div>
+    <!-- page list -->
     <div class="container-fluid border-top border-bottom border-4 border-yellow mt-5 list">
 		<div class="container-xl">
             <ul class="nav nav-pills flex-nowrap d-flex justify-content-center my-4 align-items-center" id="myTab" role="tablist">
@@ -253,16 +205,17 @@
             </ul>
 		</div>
 	</div>
-	
+	<!-- 主要內容 -->
     <div class="tab-content" id="myTabContent">
+        <!-- 提案介紹 -->
         <div class="container product-detail tab-pane fade show active" id="intro" role="tabpanel" aria-labelledby="intro-tab">
             <div class="row justify-content-center">
                 <div class="col-lg-11 col-xl-9 col-11 ">
-                    <!-- 產品品名 -->
-                    <!-- 產品影片or圖片 -->
+                    <!-- 提案影片or圖片 -->
                     <div class="ratio ratio-16x9 mt-5">
                         <iframe  src="https://www.youtube.com/embed/h823_Ij6mF8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                 
                     </div>
+                    <!-- 提案 -->
                     <div class=" text-center p-5 border border-5 text-color_sec fs-2 border-color_sec my-5 lh-base fw-bold">
                         一首歌，串起許多人青春年華的回憶<br>
                         在六月的天空，讓我最後再瘋狂一次<br>
@@ -303,16 +256,21 @@
                         <img class="cover "
                         src="https://images.unsplash.com/photo-1619431843897-4676bff0c286?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="">
                     </div>
-                    <!-- 學長的故事 -->
+                    <!-- 專案團隊 -->
                     <div class="funding-team bg-yellow ">
                         <div class="row justify-content-lg-start justify-content-center py-5 mx-xl-3 mx-0 g-0">
                             <h2 class="text-center fs-1 fw-bolder text-color_sec ">專案團隊</h2>
+
                             <div class="col-lg-6 col-10  d-flex justify-content-center align-items-center mt-5">
+                                <!-- 照片 -->
                                 <img class="cover" src="https://attach.setn.com/newsimages/2020/03/11/2450111-PH.jpg" alt="">
                                 <div class="ms-4">
+                                    <!-- 專案人姓名 -->
                                     <p class="fs-2">夏宗麟</p>
-                                    <p class="fs-3 my-3">系級： MBA110</p> 
-                                    <p class="fs-3">負責：專案管理</p>  
+                                    <!-- 系級 -->
+                                    <p class="fs-3 my-3">系級： <span> MBA110 </span> </p> 
+                                    <!-- 負責 -->
+                                    <p class="fs-3">負責：<span> 專案管理 </span> </p>  
                                 </div>
                             </div>
                             <div class="col-lg-6 col-10   d-flex justify-content-center align-items-center mt-5">
@@ -344,18 +302,22 @@
                     </div>
 
                     <div class="feedback border border-color_sec border-5 rouded-3 text-center my-5">
-                        <!-- 評價回饋 -->
                         <h3 class="fs-1 fw-bold mt-5">留言討論</h3>
-                        <!-- 評價資料 -->
+                        <!-- 留言討論 -->
                         <div class="mb-5">
                             <div class="row mx-sm-5 mx-0 ">
+
                                 <div class="col-lg-6 col-12 d-flex mt-5 justify-content-center align-items-center">
+                                    <!-- 使用者照片 -->
                                     <img class="cover" src="https://attach.setn.com/newsimages/2020/03/11/2450111-PH.jpg" alt="">
                                     <div class="d-flex flex-column text-start align-items-lg-start justify-content-center ms-4">
+                                        <!-- 系級 -->
                                         <p class="fs-4 fw-bold" >MBA110級 夏宗麟</p>
+                                        <!-- 留言內容 -->
                                         <p class="fs-5 mt-3 feedback-content" >宗麟貓貓萬歲，宗麟貓貓貓貓貓貓貓貓貓貓貓貓宗麟貓貓萬歲，宗麟貓貓貓貓貓貓貓貓貓貓貓貓</p>
                                     </div>
                                 </div>
+
                                 <div class="col-lg-6 col-12 d-flex mt-5 justify-content-center align-items-center">
                                     <img class="cover" src="https://attach.setn.com/newsimages/2020/03/11/2450111-PH.jpg" alt="">
                                     <div class="d-flex flex-column text-start align-items-lg-start justify-content-center ms-4">
@@ -384,6 +346,7 @@
             </div>
             
         </div>
+        <!-- 常見問題 -->
         <div class="container page tab-pane fade" id="question" role="tabpanel" aria-labelledby="question-tab">
             <div class="row justify-content-center">
                 <div class="col-lg-11 col-xl-9 col-11 ">
@@ -393,7 +356,9 @@
                         <div class="row mb-5 g-0 text-start mx-lg-5 mx-2  justify-content-center">
                             <!-- 問題細節 -->
                             <div class="col-11 border-color_sec border-bottom border-5 justify-content-center mt-5 pb-2">
-                                <h1 class="fs-2 fw-bold">Q：畢業歌的開銷在哪看？</h1>
+                                <!-- 問題 -->
+                                <h1 class="fs-2 fw-bold">Q：<span> 畢業歌的開銷在哪看？ </span> </h1>
+                                <!-- 回答 -->
                                 <p class="fs-3 mt-4 lh-base">可以從商品介紹頁面下載最新開銷明細，可以從商品介紹頁面下載最新開銷明細，可以從商品介紹頁面下載最新開銷明細</p>
                             </div>
 
@@ -412,9 +377,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            
+            </div>    
         </div>
+        <!-- 提案進度 -->
         <div class="container page tab-pane fade" id="schedule" role="tabpanel" aria-labelledby="schedule-tab">
             <div class="feedback border border-color_sec border-5 rouded-3 text-center my-5">
                 <!-- 評價回饋 -->
@@ -422,20 +387,26 @@
                 <!-- 評價資料 -->
             </div>
         </div>
+        <!-- 留言回饋 -->
         <div class="container page tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">
             <div class="feedback border border-color_sec border-5 rouded-3 text-center my-5">
-                <!-- 評價回饋 -->
+                <!-- 留言討論 -->
                 <h3 class="fs-1 fw-bold mt-5  text-color_sec">留言討論</h3>
-                <!-- 評價資料 -->
                 <div class="mb-5">
                     <div class="row mx-sm-5 mx-0">
+
                         <div class="col-lg-6 col-12 d-flex mt-5 justify-content-center align-items-center">
+                            <!-- 留言人照片 -->
                             <img class="cover" src="https://attach.setn.com/newsimages/2020/03/11/2450111-PH.jpg" alt="">
                             <div class="d-flex flex-column text-start align-items-lg-start justify-content-center ms-4">
+                                <!-- 留言人名 -->
                                 <p class="fs-4 fw-bold" >MBA110級 夏宗麟</p>
+                                <!-- 留言內容 -->
                                 <p class="fs-5 mt-3 feedback-content" >宗麟貓貓萬歲，宗麟貓貓貓貓貓貓貓貓貓貓貓貓宗麟貓貓萬歲，宗麟貓貓貓貓貓貓貓貓貓貓貓貓</p>
                             </div>
                         </div>
+
+
                         <div class="col-lg-6 col-12 d-flex mt-5 justify-content-center align-items-center">
                             <img class="cover" src="https://attach.setn.com/newsimages/2020/03/11/2450111-PH.jpg" alt="">
                             <div class="d-flex flex-column text-start align-items-lg-start justify-content-center ms-4">
@@ -462,8 +433,74 @@
             </div>
         </div>
     </div>
+     <!-- 聯絡提案人 -->
+     <div class="contact-proposer">
+        <div class="modal  fade  -" id="contact-proposer" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close float-end" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body ">
+                        <div class="text-center d-flex justify-content-start align-items-center">
+                            <h5 class="modal-title fs-2" id="exampleModalLabel">提案人：</h5>
+                            <!-- 提案人的照片&名字 -->
+                            <img class="contact-photo cover mx-1" src="https://attach.setn.com/newsimages/2020/03/11/2450111-PH.jpg" alt="">
+                            <p class="fs-3">夏宗霖</p>
+                        </div>
+                        <form action="" class="mt-2">
+                            <!-- 訊息內容 -->
+                            <label for="contact-context" class="d-block mb-2 fs-5"> 訊息內容：</label>
+                            <textarea name="contact-context" id=""  rows="10" class="w-100"></textarea>
+                            <!-- submit -->
+                            <button type="submit" class="btn btn-color_sec text-white mt-2 float-end">送出訊息</button>
+                        </form> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 贊助人資訊 -->
+    <div class="sponsor-people">
+        <div class="modal  fade " id="sponsor-people" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content bg-yellow">
+                    <div class="modal-header position-relative ">
+                        <h5 class="modal-title fs-1 mx-auto fw-bold text-color_sec" id="exampleModalLabel">贊助者</h5>
+                        <button type="button" class="btn-close position-absolute  " data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body justify-content-center d-flex flex-column align-items-center">
+                        <!-- 贊助人資訊 -->
+                        <div class="text-center d-flex justify-content-start align-items-center mb-3">  
+                            <!-- 照片、名字、系級 -->
+                            <img class="proposer-photo cover mx-1" src="https://attach.setn.com/newsimages/2020/03/11/2450111-PH.jpg" alt="">
+                            <div class="text-start ms-3 ">
+                                <p class="fs-3">夏宗霖</p>
+                                <p class="mt-1 fs-3">企業管理所 110 級</p>
+                            </div>
+                        </div>
 
 
+                        <div class="text-center d-flex justify-content-start align-items-center mb-3">  
+                            <img class="proposer-photo cover mx-1" src="https://attach.setn.com/newsimages/2020/03/11/2450111-PH.jpg" alt="">
+                            <div class="text-start ms-3 ">
+                                <p class="fs-3">夏宗霖</p>
+                                <p class="mt-1 fs-3">企業管理所 110 級</p>
+                            </div>
+                        </div>
+                        <div class="text-center d-flex justify-content-start align-items-center mb-3">  
+                            <img class="proposer-photo cover mx-1" src="https://attach.setn.com/newsimages/2020/03/11/2450111-PH.jpg" alt="">
+                            <div class="text-start ms-3 ">
+                                <p class="fs-3">夏宗霖</p>
+                                <p class="mt-1 fs-3">企業管理所 110 級</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- footer -->
     <footer>
         <div class="container-fluid bg-offline " >

@@ -1,0 +1,136 @@
+.carousel-item{
+    height: 500px;
+    img{
+        height: 100%;
+
+    }
+}
+.carousel-indicators{
+    li{
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+    }
+}
+
+.bg-lightyellow{
+    background-color: #FCFBF9;
+}
+
+.text-decoration-color-red{
+    text-decoration-color:red !important;
+}
+
+.about-nsysugo{
+    .content-container{
+        height: 400px;
+        @include phone(){
+            height: 60vw;
+        }
+    }
+    .content{
+        padding:0 20%;
+        top:18%;
+        font-size: 1.7rem;
+        @include bigpc(){
+            padding: 0 18%;
+            top: 20%;
+            font-size: 1.7rem;
+        }
+        @include pc(){
+            padding:0 15%;
+            top: 25%;
+            font-size: 1.4rem;
+        }
+        @include pad(){
+            padding: 0px 19%;
+            top: 15%;
+            font-size: 1.8rem;        
+        }
+        @include medium(){
+            padding: 0px 19%;
+            top: 25%;
+            font-size: 1.3rem;
+        }
+        @include phone(){
+            padding: 0px 19%;
+            top: 10vw;
+            p,span{
+                font-size: 4vw;
+                width: 60vw;
+            }
+        }
+    }
+}
+.alumni-feedback{
+    img{
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        border: 0.3rem solid white;
+        padding:6px
+    }
+    .bg-feedback{
+        border-radius: 35px;
+    }
+}
+.success-case{
+    .case-bg{
+        
+        background-color:rgba(0,0,0,0.6);
+        background-image: url("../img/facialMask.jpg");
+        background-blend-mode: multiply;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .circle-white{
+        min-width: 800px;
+        width: 800px;
+        opacity:0.75;
+        @include pc(){
+            min-width: 600px;
+            width: 600px;
+        }
+        @include pad(){
+            min-width: 700px;
+            width: 700px;
+        }
+        @include medium(){
+            min-width: 600px;
+            width: 600px;
+        }
+        @include phone(){
+            min-width: 100vw;
+            width: 100vw;
+        }
+    }
+    .case-story{
+        top:25%;
+        font-size: 1.7rem;
+        width: 500px;
+        @include pc(){
+            width: 400px;
+            top: 22%;
+            font-size: 1.4rem;
+        }
+        @include pad(){
+            width: 400px;
+            top: 22%;
+            font-size: 1.5rem;       
+        }
+        @include medium(){
+            width: 380px;
+            top: 18%;
+            font-size: 1.4rem;
+        }
+        @include phone(){
+            width: 200px;
+            top: 10vw;
+            p{
+                font-size: 4vw;
+                width: 60vw;
+            }
+        }
+    }
+}
