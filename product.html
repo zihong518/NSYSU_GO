@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="scss/all.css">
     <script src="https://kit.fontawesome.com/04ee868bb6.js" crossorigin="anonymous"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-C8X5WHFQH4"></script>
 </head>
@@ -64,16 +66,56 @@
             <div class="row mt-5 product-info justify-content-center">
                 <!-- 產品圖-->
                 <div class=" col-xl-6 col-lg-6 col-md-10 col-11  product-image d-flex justify-content-center align-items-center flex-column">
-                    <div class="img-main mx-auto ">
-                        <!-- 產品大圖 --> 
+                   <div class="slider slider-for">
+                        <!-- ⭐⭐⭐圖片區，上面的要對到下面的⭐⭐⭐ -->
+                        <div class="ratio ratio-3x2 img-click" data-bs-toggle="modal" data-bs-target="#big-image"><img src="https://images.unsplash.com/photo-1481114070102-72f9d11057dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1104&q=80" alt=""> alt=""></div>
+                        <div class="ratio ratio-3x2 img-click" data-bs-toggle="modal" data-bs-target="#big-image"><img src="https://images.unsplash.com/photo-1481114070102-72f9d11057dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1104&q=80" alt=""> alt=""></div>
+                        <div class="ratio ratio-3x2 img-click" data-bs-toggle="modal" data-bs-target="#big-image"><img src="../../web_img/product/3/3.jpg" alt=""></div>
+                        <div class="ratio ratio-3x2 img-click" data-bs-toggle="modal" data-bs-target="#big-image"><img src="../../web_img/product/3/4.jpg" alt=""></div>
+                        <div class="ratio ratio-3x2 img-click" data-bs-toggle="modal" data-bs-target="#big-image"><img src="../../web_img/product/3/5.jpg" alt=""></div>
+                        <div class="ratio ratio-3x2 img-click" data-bs-toggle="modal" data-bs-target="#big-image"><img src="../../web_img/product/3/6.jpg" alt=""></div>
+                        <div class="ratio ratio-3x2 img-click" data-bs-toggle="modal" data-bs-target="#big-image"><img src="../../web_img/product/3/7.jpg" alt=""></div>
+                        <div class="ratio ratio-3x2 img-click" data-bs-toggle="modal" data-bs-target="#big-image"><img src="../../web_img/product/3/8.jpg" alt=""></div>
+                        <div class="ratio ratio-3x2 img-click" data-bs-toggle="modal" data-bs-target="#big-image"><img src="../../web_img/product/3/9.jpg" alt=""></div>
+                        <div class="ratio ratio-3x2 img-click" data-bs-toggle="modal" data-bs-target="#big-image"><img src="../../web_img/product/3/10.jpg" alt=""></div>
+                        <div class="ratio ratio-3x2 img-click" data-bs-toggle="modal" data-bs-target="#big-image"><img src="../../web_img/product/3/11.jpg" alt=""></div>
+                        <div class="ratio ratio-3x2 img-click" data-bs-toggle="modal" data-bs-target="#big-image"><img src="../../web_img/product/3/12.jpg" alt=""></div>
+                        <div class="ratio ratio-3x2 img-click" data-bs-toggle="modal" data-bs-target="#big-image"><img src="../../web_img/product/3/13.jpg" alt=""></div>
+                        <div class="ratio ratio-3x2 img-click" data-bs-toggle="modal" data-bs-target="#big-image"><img src="../../web_img/product/3/14.jpg" alt=""></div>
+                        <div class="ratio ratio-3x2 img-click" data-bs-toggle="modal" data-bs-target="#big-image"><img src="../../web_img/product/3/15.jpg" alt=""></div>
+                        <div class="ratio ratio-3x2 img-click" data-bs-toggle="modal" data-bs-target="#big-image"><img src="../../web_img/product/3/16.jpg" alt=""></div>
+                        <div class="ratio ratio-3x2 img-click" data-bs-toggle="modal" data-bs-target="#big-image"><img src="../../web_img/product/3/17.jpg" alt=""></div>
+                </div>
+                    <div class="slider slider-nav">
+                                                    <div class="ratio ratio-3x2 "><img src="../../web_img/product/3/1.jpg" alt=""></div>
+                                                    <div class="ratio ratio-3x2 "><img src="../../web_img/product/3/2.jpg" alt=""></div>
+                                                    <div class="ratio ratio-3x2 "><img src="../../web_img/product/3/3.jpg" alt=""></div>
+                                                    <div class="ratio ratio-3x2 "><img src="../../web_img/product/3/4.jpg" alt=""></div>
+                                                    <div class="ratio ratio-3x2 "><img src="../../web_img/product/3/5.jpg" alt=""></div>
+                                                    <div class="ratiNo ratio-3x2 "><img src="../../web_img/product/3/6.jpg" alt=""></div>
+                                                    <div class="ratio ratio-3x2 "><img src="../../web_img/product/3/7.jpg" alt=""></div>
+                                                    <div class="ratio ratio-3x2 "><img src="../../web_img/product/3/8.jpg" alt=""></div>
+                                                    <div class="ratio ratio-3x2 "><img src="../../web_img/product/3/9.jpg" alt=""></div>
+                                                    <div class="ratio ratio-3x2 "><img src="../../web_img/product/3/10.jpg" alt=""></div>
+                                                    <div class="ratio ratio-3x2 "><img src="../../web_img/product/3/11.jpg" alt=""></div>
+                                                    <div class="ratio ratio-3x2 "><img src="../../web_img/product/3/12.jpg" alt=""></div>
+                                                    <div class="ratio ratio-3x2 "><img src="../../web_img/product/3/13.jpg" alt=""></div>
+                                                    <div class="ratio ratio-3x2 "><img src="../../web_img/product/3/14.jpg" alt=""></div>
+                                                    <div class="ratio ratio-3x2 "><img src="../../web_img/product/3/15.jpg" alt=""></div>
+                                                    <div class="ratio ratio-3x2 "><img src="../../web_img/product/3/16.jpg" alt=""></div>
+                                                    <div class="ratio ratio-3x2 "><img src="../../web_img/product/3/17.jpg" alt=""></div>
+                                            </div>
+                </div>
+            </div>
+                    
+                    <!-- <div class="img-main mx-auto ">
                         <img class=" cover " 
                         src="https://images.unsplash.com/photo-1580634718819-5986efba23e1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80" alt="">
                     </div>
                     <div class="img-small d-flex justify-content-center mt-3 ">
-                        <!-- 產品小圖 -->
                         <img class=" " src="https://images.unsplash.com/photo-1580634718819-5986efba23e1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80" alt="">
                         <img class="" src="https://images.unsplash.com/photo-1580634718819-5986efba23e1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80" alt="">
-                    </div>
+                    </div> -->
                 </div>
                 <div class=" col-lg-6 col-md-10 col-11  product-content">
                     <!-- 產品品名 -->
@@ -198,7 +240,7 @@
                     </div>
 
                     <!-- 詳細產品介紹-->
-                    <div class=" text-center p-5 border border-4 fs-2 border-yellow my-5 lh-base">
+                    <div class=" text-center p-5 border border-4 fs-3 border-yellow my-5 lh-base">
                         詳細產品介紹     詳細產品介紹詳細產品介紹<br>
                         詳細產品介紹     詳細產品介紹詳細產品介紹<br>
                         詳細產品介紹     詳細產品介紹詳細產品介紹<br>
@@ -568,6 +610,7 @@
     </script>
     
     <script src="product.js"></script>
+
 </body>
 </html>
 
