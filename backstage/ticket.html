@@ -52,19 +52,20 @@
             <div class="col-9 ms-5 mt-4">
                 <div class="tab-content" id="pills-tabContent">
                     <!-- 商品管理 -->
-                    <div class="row align-items-center justify-content-start mb-3">
-                        <div class="col-2" >
-                            <img src="20898.jpg" class="rounded-circle cover mx-auto" alt="" style="width: 110px; height: 110px; " >
+                   
+                    <div class="tab-pane fade show active" id="product" role="tabpanel" aria-labelledby="product-tab">
+                        <div class="row align-items-center justify-content-start mb-3">
+                            <div class="col-2" >
+                                <img src="20898.jpg" class="rounded-circle cover mx-auto" alt="" style="width: 110px; height: 110px; " >
+                            </div>
+                            <div class="col-8">
+                                <form class="d-flex">
+                                    <input class="form-control me-5" type="search" placeholder="Search" aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">Search</button>
+                                  </form>
+                            </div>
                         </div>
-                        <div class="col-8">
-                            <form class="d-flex">
-                                <input class="form-control me-5" type="search" placeholder="Search" aria-label="Search">
-                                <button class="btn btn-outline-success" type="submit">Search</button>
-                              </form>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade show" id="product" role="tabpanel" aria-labelledby="product-tab">
-                        <div class="card mb-3 rounded-3" >
+                        <div class="card mb-3 rounded-3 " >
                             <div class="row">
                                 <div class="col-3 d-flex align-items-center justify-content-center">
                                     <img class="p-2 " src="https://images.unsplash.com/photo-1621299978028-82d4f3dcad32?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="...">
@@ -133,7 +134,7 @@
                         </div>
                     </div>
                     <!-- 訂單管理 -->
-                    <div class="tab-pane fade show active" id="order" role="tabpanel" aria-labelledby="order-tab">
+                    <div class="tab-pane fade show " id="order" role="tabpanel" aria-labelledby="order-tab">
                         <div class="card mb-3 rounded-3 py-2 container order-list" >
                             <div class="row align-items-center">
                                 <div class="col-3 d-flex align-items-center">
