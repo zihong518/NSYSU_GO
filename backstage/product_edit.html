@@ -9,6 +9,7 @@
     <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2"></script> -->
     <!-- vue 3 -->
     <script src="https://unpkg.com/vue@next"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.11/cropper.min.css" integrity="sha512-NCJ1O5tCMq4DK670CblvRiob3bb5PAxJ7MALAz2cV40T9RgNMrJSAwJKy0oz20Wu7TDn9Z2WnveirOeHmpaIlA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
@@ -95,7 +96,7 @@
                         </div>
 
                     </div>
-                    <div class="mb-3">
+                    <!-- <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label fs-3">封面相片</label>
                         <div class="d-flex">
                         </div>
@@ -103,11 +104,12 @@
                             <label for="formFileMultiple" class="form-label">照片</label>
                             <input class="form-control" type="file" accept="image/*" @change="previewImage($event)" >
                             <div v-if="preview"  class="d-flex align-items-center">
-                                <img :src="preview" class="w-75 d-inline" >
+                                <img :src="preview" class="w-75 d-inline"  >
+                                
                                 <button class="btn btn-danger ms-3" @click="deleteImage()"> 刪除</button>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label fs-3">產品相片</label>
                         <div class="d-flex">
@@ -115,9 +117,10 @@
                         <div class="mb-3">
                             <label for="formFileMultiple" class="form-label">照片</label>
                             <input class="form-control" type="file" accept="image/*" @change="previewMultiImage($event)" multiple>
-                            <div v-for="(item, index) in preview_list " class="d-flex align-items-center" :key="index">
-                                <img :src="item" class="w-75 d-inline" >
-                                <button class="btn btn-danger ms-3" @click="deleteMultiImage(index)"> 刪除</button>
+                            <div v-for="(item, index) in preview_list " class="" :key="index">
+                                <img :src="item" class="img-fluid " :ref="setItemRef" @ready="cutImage($event)">
+                                <div id="previewImg"></div>
+                                <button type="button" class="btn btn-success" @click="cutImage(index)">剪裁</button>
                             </div>
                         </div>
                     </div>
@@ -189,89 +192,25 @@
             
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.11/cropper.js" integrity="sha512-1bpfZkKJ+WlmJN/I2KLm79dSiuOos0ymwL5IovsUVARyzcaf9rSXsVO2Cdg4qlKNOQXh8fd1d0vKeY9Ru3bQDw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script src="../js/vue3.js"></script>
-</body>
-<!-- <script>
-    const vm = Vue.createApp({
-    data(){
-        return{
-            thing:"",
-            categories:[
-                {
-                    content:"顏色",
-                    bool_modify:false,
-                    types:["白色","紅色"]
+    <!--<script>
+        const image = document.getElementById('image')
+        console.log(image)
+        const cropper = new Cropper(image, {
+                aspectRatio: 16 / 9,
+                crop(event) {
+                    console.log(event.detail.x);
+                    console.log(event.detail.y);
+                    console.log(event.detail.width);
+                    console.log(event.detail.height);
+                    console.log(event.detail.rotate);
+                    console.log(event.detail.scaleX);
+                    console.log(event.detail.scaleY);
                 },
-                {
-                    content:"尺寸",
-                    bool_modify:false,
-                    types :["大","小"]
-                }
-            ],
-            modification:"",
-            price:"",
-            quantity:"",
-            type:["",""],
-        }
-    },
-    methods:{
-        addCategory(val){
-            if(Object.keys(this.categories).length>=2){
-                console.log(this.products)
-            }
-            else(
-                console.log(this.products),
-                this.categories.push({content:val,bool_modify:false,types:[]})
-            )
-        },
-        deleteCategory(val){
-            
-            this.categories.splice(this.categories.indexOf(val),1)
-        },
-        modifyCategory(position){
-            this.categories[this.categories.indexOf(position)].bool_modify=true
-        },
-        modifyContent(item,position){
-            this.categories[this.categories.indexOf(position)].content=item
-            this.categories[this.categories.indexOf(position)].bool_modify=false
-        },
-        addType(item,position){
-            this.categories[this.categories.indexOf(position)].types.push(item)
-        },
-    },
-    computed: {
-        products() {
-            let result=[]
-            // 要處理長度問題
-            if(this.categories.length==1){
-                for(let i=0;i<this.categories[Object.keys(this.categories)[0]].types.length;i++){
-                    result.push({
-                        type1:this.categories[Object.keys(this.categories)[0]].types[i],
-                        price:"",
-                        quantity:"",
-                    })
-                }
-            }
-            if(this.categories.length==2){
-                for(let i=0;i<this.categories[Object.keys(this.categories)[0]].types.length;i++){
-                    for(let j=0;j<this.categories[Object.keys(this.categories)[1]].types.length;j++){
-                        result.push({
-                            type1:this.categories[Object.keys(this.categories)[0]].types[i],
-                            type2:this.categories[Object.keys(this.categories)[1]].types[j],
-                            price:"",
-                            quantity:"",
-                        })
-                    }
-                }
-            }
-           
-            return result
-             
-        }
-    },
-});
+            });
+        </script> -->
+</body>
 
-vm.mount('#app');
-</script> -->
 </html>

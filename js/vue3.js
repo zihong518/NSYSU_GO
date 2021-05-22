@@ -1,3 +1,6 @@
+document.write(
+    unescape("%3Cscript src='https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.11/cropper.js' type='text/javascript'%3E%3C/script%3E")
+  );
 const vm = Vue.createApp({
     data(){
         return{
@@ -21,14 +24,59 @@ const vm = Vue.createApp({
                 {val:"全家",item:'全家'},
                 {val:"中山GO",item:'中山GO'},
             ],
-            preview:null,
-            image:null,
+            // preview:null,
+            // image:null,
             preview_list: [],
             image_list: [],
-            productDescription:[]
+            productDescription:[],
+            itemRefs: [],
+            cutPhoto:[],
+            preview:null
+            // image_dom:image
         }
     },
     methods:{
+        setItemRef(el){
+            let cropper
+            if (el) {
+                this.itemRefs.push(el)
+                cropper = new Cropper(this.itemRefs[this.itemRefs.length-1], {
+                    aspectRatio: 4 / 3,
+                    // preview : document.getElementById('previewImg'),  // 預覽檢視
+                    guides : true,   // 裁剪框的虛線(九宮格)
+                    autoCropArea : 1, // 0-1之間的數值，定義自動剪裁區域的大小，預設0.8
+                    dragMode: 'crop', // 拖曳模式 crop(Default,新增裁剪框) / move(移動裁剪框&圖片) / none(無動作)
+                    cropBoxResizable : true, // 是否有裁剪框調整四邊八點
+                    movable : false, // 是否允許移動圖片
+                    zoomable : true, // 是否允許縮放圖片大小
+                    rotatable : false,   // 是否允許旋轉圖片
+                    zoomOnWheel : false, // 是否允許通過滑鼠滾輪來縮放圖片
+                    zoomOnTouch : false, // 是否允許通過觸控移動來縮放圖片
+                    ready : function(e) {  
+                        console.log('ready!');
+                    },
+                    // crop(event) {
+                    //   console.log(event.detail.x);
+                    //   console.log(event.detail.y);
+                    //   console.log(event.detail.width);
+                    //   console.log(event.detail.height);
+                    //   console.log(event.detail.rotate);
+                    //   console.log(event.detail.scaleX);
+                    //   console.log(event.detail.scaleY);
+                    // },
+                })
+            
+               
+            }
+            // this.itemRefs[this.itemRefs.length-1].addEventListener('ready', function () {
+            //     console.log(this.cropper === cropper);
+            //     // > true
+            // });
+            
+        },
+        cutImage(e){
+            console.log(e)
+        },
         addDescription(){
             this.productDescription.push({
                 id:this.productDescription.length,
@@ -38,23 +86,22 @@ const vm = Vue.createApp({
         },
         deleteDescription(position){
             this.productDescription.splice(position,1)
-        }
-        ,
-        previewImage(event) {
-            let input = event.target;
-            if (input.files) {
-                let reader = new FileReader();
-                reader.onload = (e) => {
-                  this.preview=e.target.result;
-                }
-                this.image=input.files[0];
-                reader.readAsDataURL(input.files[0]);
-            }
         },
-        deleteImage(){
-            this.preview=null
-            this.image=null
-        },
+        // previewImage(event) {
+        //     let input = event.target;
+        //     if (input.files) {
+        //         let reader = new FileReader();
+        //         reader.onload = (e) => {
+        //           this.preview=e.target.result;
+        //         }
+        //         this.image=input.files[0];
+        //         reader.readAsDataURL(input.files[0]);
+        //     }
+        // },
+        // deleteImage(){
+        //     this.preview=null
+        //     this.image=null
+        // },
         previewMultiImage(event) {
             let input = event.target;
             let count = input.files.length;
@@ -121,7 +168,7 @@ const vm = Vue.createApp({
             this.categories[this.categories.indexOf(position)].types.push(item)
         },
         submit(){
-            console.log(this.productDescription)
+            console.log(this.$refs.img0);
         },
         addToLogistics(product,list,event){
             let position=this.products[this.products.indexOf(product)]
