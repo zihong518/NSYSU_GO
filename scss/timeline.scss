@@ -1,0 +1,68 @@
+.timeline {
+    padding-top: 5%;
+      a {
+      display: block; //要改成區塊元素
+      background-color: #ffe033;
+      border: 2px solid #fff;
+      padding: 20px;
+      box-shadow: 0 0 5px #666;
+      border-radius: 10px;
+      transition: all 0.5s;
+      &:hover {
+        background-color: #fcea86;
+      }
+    }
+  
+         li {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        border-radius: 10px;
+        width: 50%;
+        position: relative;
+        &::before {
+          //圓點
+          content: "";
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          background-color: #fff;
+        }
+        &:nth-child(odd) {
+          float: left;
+          padding-right: 100px;
+          & h2::after {
+            right: 0; //基數列橫線位置
+          }
+          &::after {
+            content: ""; //繪製基數列橫線
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 1px;
+            height: 100%;
+            background-color: #ffffff;
+          }
+          &::before {
+            right: -10px; //基數列圓點位置
+          }
+        }
+        &:nth-child(even) {
+          float: right;
+          padding-left: 100px;
+          transform: translateY(50%); //偶數列往下移動 50% 空間
+          & h2::after {
+            left: 0; //偶數列橫線位置
+          }
+          &:last-child {
+            height: 50%; //最後一個偶數列下方空間
+          }
+          &::before {
+            left: -10px; //偶數列圓點位置
+          }
+        }
+      }
+  }

@@ -1,10 +1,11 @@
-document.write(
-    unescape("%3Cscript src='https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.11/cropper.js' type='text/javascript'%3E%3C/script%3E")
-  );
+// document.write(
+//     unescape("%3Cscript src='https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.11/cropper.js' type='text/javascript'%3E%3C/script%3E")
+// );
 const vm = Vue.createApp({
     data(){
         return{
             thing:"",
+            // 目前的種類
             categories:[
                 {
                     content:"顏色",
@@ -19,6 +20,7 @@ const vm = Vue.createApp({
             ],
             modification:"",
             type:["",""],
+            // 物流方式
             quantityChoose : [
                 {val:"黑貓",item:'黑貓'},
                 {val:"全家",item:'全家'},
@@ -26,9 +28,16 @@ const vm = Vue.createApp({
             ],
             // preview:null,
             // image:null,
+            // 照片
             preview_list: [],
             image_list: [],
+            // 產品描述
             productDescription:[],
+            productQuestion:[],
+            productSmallDescription:{
+                title:null,
+                description:null,
+            },
             itemRefs: [],
             cutPhoto:[],
             preview:null
@@ -36,6 +45,7 @@ const vm = Vue.createApp({
         }
     },
     methods:{
+        // 照片描述(還沒用好)
         setItemRef(el){
             let cropper
             if (el) {
@@ -77,6 +87,17 @@ const vm = Vue.createApp({
         cutImage(e){
             console.log(e)
         },
+        // Description
+        addQuestion(){
+            this.productQuestion.push({
+                id:this.productQuestion.length,
+                question:null,
+                answer:null
+            })
+        },
+        deleteQuestion(position){
+            this.productQuestion.splice(position,1)
+        },
         addDescription(){
             this.productDescription.push({
                 id:this.productDescription.length,
@@ -102,6 +123,8 @@ const vm = Vue.createApp({
         //     this.preview=null
         //     this.image=null
         // },
+        
+        // 新增刪除照片
         previewMultiImage(event) {
             let input = event.target;
             let count = input.files.length;
@@ -131,6 +154,7 @@ const vm = Vue.createApp({
             this.preview_list.splice(index,1)
             this.image_list.splice(index,1)
         },
+        // 新增刪除修改種類
         addCategory(val){
             if(Object.keys(this.categories).length>=2){
                 console.log(this.products),
@@ -147,11 +171,6 @@ const vm = Vue.createApp({
         deleteCategory(val){
             this.categories.splice(this.categories.indexOf(val),1)
         },
-        deleteType(val,position){
-            let category= this.categories[this.categories.indexOf(position)]
-            console.log(val,category)
-            category.types.splice(category.types.indexOf(val),1)
-        },
         modifyCategory(position){
             this.categories[this.categories.indexOf(position)].bool_modify=true
         },
@@ -162,14 +181,28 @@ const vm = Vue.createApp({
             else{
                 this.categories[this.categories.indexOf(position)].content=item
                 this.categories[this.categories.indexOf(position)].bool_modify=false
+                this.modification=""
             }
         },
+        // 新增刪除類型
+        deleteType(val,position){
+            let category= this.categories[this.categories.indexOf(position)]
+            console.log(val,category)
+            category.types.splice(category.types.indexOf(val),1)
+        },
         addType(item,position){
-            this.categories[this.categories.indexOf(position)].types.push(item)
+            if(item==""){
+                alert("請輸入文字")
+            }
+            else{
+                this.categories[this.categories.indexOf(position)].types.push(item)
+            }
         },
+        // 提交表單
         submit(){
-            console.log(this.$refs.img0);
+            console.log(this.products);
         },
+        // 新增物流to products
         addToLogistics(product,list,event){
             let position=this.products[this.products.indexOf(product)]
             if(event.target.checked){
@@ -177,11 +210,11 @@ const vm = Vue.createApp({
             }
             else{
                 position.logistics.splice(position.logistics.indexOf(list.item),1)
-                console.log(position.logistics)
             }
         }
     },
     computed: {
+        // 產品資訊
         products() {
             let result=[]
             let index=0;

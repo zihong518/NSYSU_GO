@@ -226,3 +226,7 @@
         border-radius: 50%;
     }
 }
+
+.slick-prev:before, .slick-next:before{
+    color: #464646 !important;
+}

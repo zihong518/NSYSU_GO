@@ -1,0 +1,82 @@
+.timeline {
+  padding-top: 5%;
+}
+
+.timeline a {
+  display: block;
+  background-color: #ffe033;
+  border: 2px solid #fff;
+  padding: 20px;
+  -webkit-box-shadow: 0 0 5px #666;
+          box-shadow: 0 0 5px #666;
+  border-radius: 10px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.timeline a:hover {
+  background-color: #fcea86;
+}
+
+.timeline li {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-radius: 10px;
+  width: 50%;
+  position: relative;
+}
+
+.timeline li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.timeline li:nth-child(odd) {
+  float: left;
+  padding-right: 100px;
+}
+
+.timeline li:nth-child(odd) h2::after {
+  right: 0;
+}
+
+.timeline li:nth-child(odd)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+.timeline li:nth-child(odd)::before {
+  right: -10px;
+}
+
+.timeline li:nth-child(even) {
+  float: right;
+  padding-left: 100px;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+}
+
+.timeline li:nth-child(even) h2::after {
+  left: 0;
+}
+
+.timeline li:nth-child(even):last-child {
+  height: 50%;
+}
+
+.timeline li:nth-child(even)::before {
+  left: -10px;
+}
+/*# sourceMappingURL=timeline.css.map */

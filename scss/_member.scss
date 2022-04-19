@@ -1,0 +1,203 @@
+
+.menu-side{
+    width: 15%;
+    min-height: 87.6vh;;
+    background-color: $yellow;
+    .border-bottom{
+        border-color:1px solid #C0BDB4 !important;
+    }
+}
+.body-side{
+    width: 85%;
+    @include pad(){
+        width: 100%;
+    }
+}
+.member-form-text{
+    padding: 0.3rem 0.3rem;
+    font-size: 1rem;
+    color: #212529;
+    border: 1px solid #B5B3C2;
+    border-radius: 3px;
+    margin-left:1rem ;
+}
+.form-select{
+    border: 1px solid #B5B3C2;
+    width:16.3% !important;
+    padding: 0.10rem 1.75rem 0.10rem 0.5rem !important;
+    border-radius: 3px;
+}
+.member-form{
+    label{
+        color: #B5B3C2;
+    }
+}
+.member-photo{
+    min-width: 12.5rem;
+    width:  12.5rem;
+    height:  12.5rem;
+    border-radius:50%;
+}
+.member-button{
+    width: 200px;
+}
+.experience-circle{
+    width: 40px;
+    height: 40px;
+    top: -11px;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    line-height: 40px;
+    margin: 0 0 0 -15px;
+}
+.experience-name{
+    top: 33px;
+    margin-left: -25px;
+}
+.experience-length{
+    width: 20%;
+}
+.mission{
+    width: 48%;
+    padding:0 4rem ;
+}
+.medal{
+    width: 220px;
+    height: 220px;
+    line-height:220px;
+    text-align: center;
+    background-color: #A0ADD4;
+    font-size: 30px;
+    color: white;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.order-status{
+    li{
+        border: 1px solid $yellow;
+        width: 12.5%;
+        border-radius: 0.25rem;
+        .active{
+            color: $dark !important;
+            background-color: $yellow !important;
+        }
+        .btn{
+            &:focus{
+              box-shadow:0 0 0 0.25rem #edbe6e78 !important; 
+            }
+        }
+        @include pad(){
+            width: 14.5%;
+        }
+    }
+    .nav-link{
+        width: 100%;
+        height: 100%;
+        padding: 0.5rem;
+    }
+
+
+}
+
+.order-list{
+    .status{
+        width: 28%;
+        margin: 0 auto;
+    }
+}
+.btn-close{
+    border-radius: 50%;
+    background-color: $color_sec;
+}
+.goPoint{
+    height: 2.5rem;
+    width: 2.5rem;
+    min-width:2.5rem;
+    line-height: 2.5rem;
+}
+.imgPreview {
+    border-radius: 50%;
+}
+// cropper.js的東西
+.cropper-view-box {
+border-radius: 50%;
+outline: none !important; 
+}
+.cropper-face.cropper-move {
+opacity: 0;
+}
+
+.quantity{
+    li  {
+        width: 1.875rem;
+        min-width: 1.875rem;
+        height: 1.875rem;
+        line-height: 1.875rem;
+        @include pad(){
+            width: 1.5rem;
+            min-width: 1.5rem;
+            height: 1.5rem;
+            line-height: 1.5rem;
+
+        }
+    }
+}
+.form-check-input{
+    width: 1.5rem;
+    min-width: 1.5rem;
+    height: 1.5rem;
+    @include pad(){
+        width: 1.25rem;
+        min-width: 1.25rem;
+        height: 1.25rem;
+    }
+    &:checked{
+        background-color: $color_sec;
+        border-color: $color_sec;
+    }
+    &:focus{
+        border-color: rgb(255, 243, 215);
+        outline: 0;
+        box-shadow: 0 0 0 0.25rem #FFF5D7
+    }
+}
+
+.quantityButton{
+    i{
+        transition: color 0.2s;
+    }
+    &:hover{
+        i{
+            color:$color_sec !important;   
+        }
+
+    }
+}
+.cartGoPoint{
+    width:2rem;
+    min-width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+}
+.form-toggle{
+    height: 1.3rem !important;
+    width: 2.5rem !important;
+    margin-left: 1rem !important;
+    &:checked{
+        background-color: #7ED957;
+        border-color: #7ED957;
+    }
+    &:focus{
+        border-color: #7ED957;
+        outline: 0;
+        box-shadow: 0 0 0 0.25rem #afdf9b
+    }
+}
+.order-discount{
+    width: 14.375rem !important;
+}
+.order-money{
+    width: 10.375rem !important;
+}

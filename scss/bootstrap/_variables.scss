@@ -70,7 +70,7 @@ $colors: (
 // scss-docs-end colors-map
 
 $primary:       $blue !default;
-$secondary:     $gray-600 !default;
+$secondary:     #B4B3C2 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
@@ -562,6 +562,7 @@ $table-variants: (
   "danger":     shift-color($danger, $table-bg-scale),
   "light":      $light,
   "dark":       $dark,
+  "color_sec":  #EDD09F
 ) !default;
 // scss-docs-end table-variables
 

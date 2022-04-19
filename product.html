@@ -1,19 +1,21 @@
-
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-    <meta name="Description" content="中山GO是一個屬於中山人的平台，秉持著中山人，一家人，愛助人的精神，平台上提供了來自中山人的優質商品，並且擁有屬於中山人的專屬價格，同時也是在校生實現計畫、創造更多價值的募資平台，加入中山GO，持續燃燒中山魂!">        
-    <link rel="icon" href="/img/logo.ico" type="image/x-icon" >
-    <title>中山GONSYSUGO</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="Description"
+        content="中山GO是一個屬於中山人的平台，秉持著中山人，一家人，愛助人的精神，平台上提供了來自中山人的優質商品，並且擁有屬於中山人的專屬價格，同時也是在校生實現計畫、創造更多價值的募資平台，加入中山GO，持續燃燒中山魂!">
+    <link rel="icon" href="/img/logo.ico" type="image/x-icon">
+    <title>中山GO NSYSUGO</title>
     <!-- <link rel="stylesheet" href="{{asset('/resources/css/all.min.css')}}"> -->
     <link rel="stylesheet" href="scss/all.css">
     <script src="https://kit.fontawesome.com/04ee868bb6.js" crossorigin="anonymous"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-C8X5WHFQH4"></script>
@@ -21,101 +23,94 @@
 <body>
     <header class="container-fluid bg-offline header">
         <div class="container mx-auto">
-        <nav class="navbar justify-content-between py-3 navbar-expand-lg">
-            <h1 class="w-50 ">
-                <a class="link-light fw-bold fs-1 logo_hover d-flex justify-content-start align-items-center"   href="index" >
-                    <img src="img/logo/nsysugo_logo_only.png" alt="" srcset="" class=" d-inline-block cus_shadow"  width="10%"> 
-                    <p class="cus_shadow  fs-1 d-inline ms-2 mt-2">中山GO</p>
-                </a>
-            </h1>
-            <!-- toggle -->
-            <button class="navbar-toggler navbar-light border border-2 " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                <ul class="navbar-nav text-center mt-3 mt-lg-0 ">
-                    <li class="nav-item me-3 ">
-                        <a class="nav-link  fs-4 " href="product" id="newproduct">
-                            關於我們
-                        </a>
-                    </li>
-                    <li class="nav-item  me-3">
-                        <a class="nav-link  fs-4 " href="fundraising" id="fundraising">
-                            最新產品
-                        </a>
-                    </li>
-                    <li class="nav-item  me-3">
-                        <a class="nav-link  fs-4 " href="fundraising" id="fundraising">
-                            群募計畫
-                        </a>
-                    </li>
-                    <li class="nav-item  me-3">
-                        <a class="nav-link  fs-4 " href="fundraising" id="fundraising">
-                            登入
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+            <nav class="navbar justify-content-between py-3 navbar-expand-lg">
+                <h1 class="w-50 ">
+                    <a class="link-light fw-bold fs-1 logo_hover d-flex justify-content-start align-items-center"
+                        href="index.html">
+                        <img src="img/logo/nsysugo_logo_only.png" alt="" srcset="" class=" d-inline-block cus_shadow"
+                            width="10%">
+                        <p class="cus_shadow  fs-1 d-inline ms-2 mt-2">中山GO</p>
+                    </a>
+                </h1>
+                <!-- toggle -->
+                <button class="navbar-toggler navbar-light border border-2 " type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav text-center mt-3 mt-lg-0 ">
+                        <li class="nav-item me-3 ">
+                            <a class="nav-link  fs-4 " href="about.html" id="newproduct">
+                                關於我們
+                            </a>
+                        </li>
+                        <li class="nav-item  me-3">
+                            <a class="nav-link  fs-4 " href="product_index.html" id="fundraising">
+                                最新產品
+                            </a>
+                        </li>
+                        <li class="nav-item  me-3">
+                            <a class="nav-link  fs-4 " href="crowdFunding.html" id="fundraising">
+                                群募計畫
+                            </a>
+                        </li>
+                        <li class="nav-item  me-3">
+                            <a class="nav-link  fs-4 " href="# " id="fundraising">
+                                登入
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
     </header>
-    <!-- 產品上片 -->
+
+    <!-- 產品上面 -->
     <div class="product">
         <div class="container-xl	">
-			<!-- 產品資訊 -->
+            <!-- 產品資訊 -->
             <div class="row mt-5 product-info justify-content-center">
                 <!-- 產品圖-->
-                <div class=" col-xl-6 col-lg-6 col-md-10 col-11  product-image d-flex justify-content-center align-items-center flex-column">
-                   <div class="slider slider-for">
-                        <!-- ⭐⭐⭐圖片區，上面的要對到下面的⭐⭐⭐ -->
-                        <div class="ratio ratio-3x2 img-click" data-bs-toggle="modal" data-bs-target="#big-image"><img src="https://images.unsplash.com/photo-1481114070102-72f9d11057dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1104&q=80" alt=""> alt=""></div>
-                        <div class="ratio ratio-3x2 img-click" data-bs-toggle="modal" data-bs-target="#big-image"><img src="https://images.unsplash.com/photo-1481114070102-72f9d11057dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1104&q=80" alt=""> alt=""></div>
-                        <div class="ratio ratio-3x2 img-click" data-bs-toggle="modal" data-bs-target="#big-image"><img src="../../web_img/product/3/3.jpg" alt=""></div>
-                        <div class="ratio ratio-3x2 img-click" data-bs-toggle="modal" data-bs-target="#big-image"><img src="../../web_img/product/3/4.jpg" alt=""></div>
-                        <div class="ratio ratio-3x2 img-click" data-bs-toggle="modal" data-bs-target="#big-image"><img src="../../web_img/product/3/5.jpg" alt=""></div>
-                        <div class="ratio ratio-3x2 img-click" data-bs-toggle="modal" data-bs-target="#big-image"><img src="../../web_img/product/3/6.jpg" alt=""></div>
-                        <div class="ratio ratio-3x2 img-click" data-bs-toggle="modal" data-bs-target="#big-image"><img src="../../web_img/product/3/7.jpg" alt=""></div>
-                        <div class="ratio ratio-3x2 img-click" data-bs-toggle="modal" data-bs-target="#big-image"><img src="../../web_img/product/3/8.jpg" alt=""></div>
-                        <div class="ratio ratio-3x2 img-click" data-bs-toggle="modal" data-bs-target="#big-image"><img src="../../web_img/product/3/9.jpg" alt=""></div>
-                        <div class="ratio ratio-3x2 img-click" data-bs-toggle="modal" data-bs-target="#big-image"><img src="../../web_img/product/3/10.jpg" alt=""></div>
-                        <div class="ratio ratio-3x2 img-click" data-bs-toggle="modal" data-bs-target="#big-image"><img src="../../web_img/product/3/11.jpg" alt=""></div>
-                        <div class="ratio ratio-3x2 img-click" data-bs-toggle="modal" data-bs-target="#big-image"><img src="../../web_img/product/3/12.jpg" alt=""></div>
-                        <div class="ratio ratio-3x2 img-click" data-bs-toggle="modal" data-bs-target="#big-image"><img src="../../web_img/product/3/13.jpg" alt=""></div>
-                        <div class="ratio ratio-3x2 img-click" data-bs-toggle="modal" data-bs-target="#big-image"><img src="../../web_img/product/3/14.jpg" alt=""></div>
-                        <div class="ratio ratio-3x2 img-click" data-bs-toggle="modal" data-bs-target="#big-image"><img src="../../web_img/product/3/15.jpg" alt=""></div>
-                        <div class="ratio ratio-3x2 img-click" data-bs-toggle="modal" data-bs-target="#big-image"><img src="../../web_img/product/3/16.jpg" alt=""></div>
-                        <div class="ratio ratio-3x2 img-click" data-bs-toggle="modal" data-bs-target="#big-image"><img src="../../web_img/product/3/17.jpg" alt=""></div>
-                </div>
-                    <div class="slider slider-nav">
-                                                    <div class="ratio ratio-3x2 "><img src="../../web_img/product/3/1.jpg" alt=""></div>
-                                                    <div class="ratio ratio-3x2 "><img src="../../web_img/product/3/2.jpg" alt=""></div>
-                                                    <div class="ratio ratio-3x2 "><img src="../../web_img/product/3/3.jpg" alt=""></div>
-                                                    <div class="ratio ratio-3x2 "><img src="../../web_img/product/3/4.jpg" alt=""></div>
-                                                    <div class="ratio ratio-3x2 "><img src="../../web_img/product/3/5.jpg" alt=""></div>
-                                                    <div class="ratiNo ratio-3x2 "><img src="../../web_img/product/3/6.jpg" alt=""></div>
-                                                    <div class="ratio ratio-3x2 "><img src="../../web_img/product/3/7.jpg" alt=""></div>
-                                                    <div class="ratio ratio-3x2 "><img src="../../web_img/product/3/8.jpg" alt=""></div>
-                                                    <div class="ratio ratio-3x2 "><img src="../../web_img/product/3/9.jpg" alt=""></div>
-                                                    <div class="ratio ratio-3x2 "><img src="../../web_img/product/3/10.jpg" alt=""></div>
-                                                    <div class="ratio ratio-3x2 "><img src="../../web_img/product/3/11.jpg" alt=""></div>
-                                                    <div class="ratio ratio-3x2 "><img src="../../web_img/product/3/12.jpg" alt=""></div>
-                                                    <div class="ratio ratio-3x2 "><img src="../../web_img/product/3/13.jpg" alt=""></div>
-                                                    <div class="ratio ratio-3x2 "><img src="../../web_img/product/3/14.jpg" alt=""></div>
-                                                    <div class="ratio ratio-3x2 "><img src="../../web_img/product/3/15.jpg" alt=""></div>
-                                                    <div class="ratio ratio-3x2 "><img src="../../web_img/product/3/16.jpg" alt=""></div>
-                                                    <div class="ratio ratio-3x2 "><img src="../../web_img/product/3/17.jpg" alt=""></div>
-                                            </div>
-                </div>
-            </div>
-                    
-                    <!-- <div class="img-main mx-auto ">
-                        <img class=" cover " 
-                        src="https://images.unsplash.com/photo-1580634718819-5986efba23e1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80" alt="">
+                <div
+                    class=" col-xl-6 col-lg-6 col-md-10 col-11  ">
+                    <div class="slider slider-for ">
+                        <div class="ratio ratio-4x3 img-click" data-bs-toggle="modal" data-bs-target="#big-image">
+                            <img src="https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                            alt="">
+                        </div>
+                        <div class="ratio ratio-4x3 img-click" data-bs-toggle="modal" data-bs-target="#big-image">
+                            <img src="https://images.pexels.com/photos/1695052/pexels-photo-1695052.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                alt="">
+                        </div>
+                        <div class="ratio ratio-4x3 img-click" data-bs-toggle="modal" data-bs-target="#big-image">
+                            <img src="https://images.pexels.com/photos/851555/pexels-photo-851555.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                alt="">
+                        </div>
+                        <div class="ratio ratio-4x3 img-click" data-bs-toggle="modal" data-bs-target="#big-image">
+                            <img src="https://images.pexels.com/photos/324028/pexels-photo-324028.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                alt="">
+                        </div>
                     </div>
-                    <div class="img-small d-flex justify-content-center mt-3 ">
-                        <img class=" " src="https://images.unsplash.com/photo-1580634718819-5986efba23e1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80" alt="">
-                        <img class="" src="https://images.unsplash.com/photo-1580634718819-5986efba23e1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80" alt="">
-                    </div> -->
+                    <div class="slider slider-nav mt-3">
+                        <div class="ratio ratio-4x3 mx-1">
+                            <img src="https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                alt="">
+                        </div>
+                        <div class="ratio ratio-4x3  mx-1">
+                            <img src="https://images.pexels.com/photos/1695052/pexels-photo-1695052.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                alt="">
+                        </div>
+                        <div class="ratio ratio-4x3  mx-1">
+                            <img src="https://images.pexels.com/photos/851555/pexels-photo-851555.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                alt="">
+                        </div>
+                        <div class="ratio ratio-4x3  mx-1">
+                            <img src="https://images.pexels.com/photos/324028/pexels-photo-324028.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                alt="">
+                        </div>
+
+                    </div>
                 </div>
                 <div class=" col-lg-6 col-md-10 col-11  product-content">
                     <!-- 產品品名 -->
@@ -128,11 +123,19 @@
                         <p class="fs-4 text-secondary ">數量</p>
                         <!-- 產品數量 -->
                         <ul class="d-flex quantity mt-2">
-                            <li id="reduceQuantity" class="d-flex justify-content-center align-items-center bg-yellow fw-bold btn btn-outline-secondary lh-1"><i class="fas fa-minus"></i></li>
+                            <li id="reduceQuantity"
+                                class="d-flex justify-content-center align-items-center bg-yellow fw-bold btn btn-outline-secondary lh-1">
+                                <i class="fas fa-minus"></i>
+                            </li>
                             <!-- 我是產品數量 -->
-                            <li id="productQuantity" class="d-flex justify-content-center align-items-center bg-yellow text-center lh-sm" >0</li>
-                            
-                            <li id="addQuantity" class="d-flex justify-content-center align-items-center bg-yellow fw-bold  btn btn-outline-secondary "><i class="fas fa-plus"></i></li>
+                            <li id="productQuantity"
+                                class="d-flex justify-content-center align-items-center bg-yellow text-center lh-sm">0
+                            </li>
+
+                            <li id="addQuantity"
+                                class="d-flex justify-content-center align-items-center bg-yellow fw-bold  btn btn-outline-secondary ">
+                                <i class="fas fa-plus"></i>
+                            </li>
                         </ul>
                     </div>
                     <!-- 產品種類 -->
@@ -145,9 +148,14 @@
                             <option value="2">藍山</option>
                             <option value="3">台灣咖啡</option>
                         </select>
-                        <div class="mt-lg-5 mt-lg-4 mt-3 d-flex justify-content-center justify-content-lg-start align-items-center flex-wrap">
-                            <button type="submit" class="btn btn-yellow fs-3 text-color_sec fw-bold me-lg-4 me-0" id="putcart"> 放入購物車</button>
-                            <button type="submit" class="btn btn-color_sec fs-3 text-white fw-bold mt-lg-0 mt-2" id="buy"> 直接購買</button>
+                        <div
+                            class="mt-lg-5 mt-lg-4 mt-3 d-flex justify-content-center justify-content-lg-start align-items-center flex-wrap">
+                            <button type="submit" class="btn btn-yellow fs-3 text-color_sec fw-bold me-lg-4 me-0"
+                                id="putcart">
+                                放入購物車</button>
+                            <button type="submit" class="btn btn-color_sec fs-3 text-white fw-bold mt-lg-0 mt-2"
+                                id="buy">
+                                直接購買</button>
                         </div>
                     </form>
                     <!-- 產品分享 -->
@@ -159,68 +167,81 @@
                         <a href=""><i class="fab fa-line  fs-4 line-hover" style="color: #44AD53;"></i></a>
                         <span class="fs-4 ms-5">聯絡學長姐：</span></i>
                         <!-- 聯絡學長姐 -->
-                        <a href="" " data-bs-toggle="modal" data-bs-target="#contact-senior"><i class="fas fa-comments  fs-4 text-secondary"></i></a>
+                        <a href="" " data-bs-toggle=" modal" data-bs-target="#contact-senior"><i
+                                class="fas fa-comments  fs-4 text-secondary"></i></a>
                     </div>
                 </div>
             </div>
-			<!-- XX學長的話 -->
-			<div class="row product-sentence justify-content-center mt-5 ">
-				<div class=" col-xl-10 col-xxl-9 col-11 bg-color_sec sentence-background d-flex flex-lg-row flex-column justify-content-center align-items-center">
-					<!-- 學長的大頭貼 -->
-                    <img class="cotain"  
-					src="https://attach.setn.com/newsimages/2020/03/11/2450111-PH.jpg" alt="">
-                    <span class=" fs-3 fw-bold text-dark mb-3 d-inline d-lg-none">EMBA 110  夏宗麟</span>
+
+
+            <!-- XX學長的話 -->
+            <div class="row product-sentence justify-content-center mt-5 ">
+                <div
+                    class=" col-xl-10 col-xxl-9 col-11 bg-color_sec sentence-background d-flex flex-lg-row flex-column justify-content-center align-items-center">
+                    <!-- 學長的大頭貼 -->
+                    <img class="cotain" src="https://images.pexels.com/photos/842811/pexels-photo-842811.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=300&w=400" alt="">
+                    <span class=" fs-3 fw-bold text-dark mb-3 d-inline d-lg-none">EMBA 110 王小明</span>
                     <div class="me-lg-4 me-0 text-center pb-lg-0 pb-5 d-flex justify-content-center align-items-center">
-						<div class="position-relative me-lg-3 me-0 text-white fw-bold d-flex justify-content-center justify-content-lg-start">
-							<!-- 學長的話 限64字 -->
-                            
-							<h2>我們分享的不只是一杯好咖啡，更豐富的是人文薈萃、平台交流以及情感的流動與串連。</h2>
-							<div class="position-absolute comma-up" >”</div>
-							<div class="position-absolute comma-down" >”</div>
+                        <div
+                            class="position-relative me-lg-3 me-0 text-white fw-bold d-flex justify-content-center justify-content-lg-start">
+                            <!-- 學長的話 限64字 -->
+
+                            <h2>我們分享的不只是一杯好咖啡，更豐富的是人文薈萃、平台交流以及情感的流動與串連。</h2>
+                            <div class="position-absolute comma-up">”</div>
+                            <div class="position-absolute comma-down">”</div>
                             <!-- 學長的名字 -->
-							<span class=" fs-4 sentence-name text-dark d-none d-lg-inline">EMBA 110  夏宗麟</span>
-						</div>
-						
-					</div>
-					
-				</div>
-			</div>
+                            <span class=" fs-4 sentence-name text-dark d-none d-lg-inline">EMBA 110 王小明</span>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
         </div>
     </div>
 
     <!-- List -->
-	<div class="list container-fluid border-top border-bottom border-4 border-yellow mt-5 ">
-		<div class="container-xl">
-            <ul class="nav nav-pills flex-nowrap d-flex justify-content-center my-4 align-items-center" id="myTab" role="tablist">
+    <div class="list container-fluid border-top border-bottom border-4 border-yellow mt-5 ">
+        <div class="container-xl">
+            <ul class="nav nav-pills flex-nowrap d-flex justify-content-center my-4 align-items-center" id="myTab"
+                role="tablist">
                 <li class=" fs-4  text-center " role="presentation">
-                  <a class="nav-link active link-dark" id="intro-tab" data-bs-toggle="tab" href="#intro" role="tab" aria-controls="intro" aria-selected="true">商品介紹</a>
+                    <a class="nav-link active link-dark" id="intro-tab" data-bs-toggle="tab" href="#intro" role="tab"
+                        aria-controls="intro" aria-selected="true">商品介紹</a>
                 </li>
                 <li class="fs-4  text-center " role="presentation">
-                  <a class="nav-link link-dark" id="evaluation-tab" data-bs-toggle="tab" href="#evaluation" role="tab" aria-controls="evaluation" aria-selected="false">商品評價</a>
+                    <a class="nav-link link-dark" id="evaluation-tab" data-bs-toggle="tab" href="#evaluation" role="tab"
+                        aria-controls="evaluation" aria-selected="false">商品評價</a>
                 </li>
                 <li class=" fs-4  text-center" role="presentation">
-                  <a class="nav-link link-dark" id="question-tab" data-bs-toggle="tab" href="#question" role="tab" aria-controls="question" aria-selected="false">常見問題</a>
+                    <a class="nav-link link-dark" id="question-tab" data-bs-toggle="tab" href="#question" role="tab"
+                        aria-controls="question" aria-selected="false">常見問題</a>
                 </li>
                 <li class="fs-4  text-center " role="presentation">
-                    <a class="nav-link link-dark" id="contact-tab" data-bs-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">聯絡賣家</a>
+                    <a class="nav-link link-dark" id="contact-tab" data-bs-toggle="tab" href="#contact" role="tab"
+                        aria-controls="contact" aria-selected="false">聯絡賣家</a>
                 </li>
             </ul>
 
-		</div>
-	</div>
+        </div>
+    </div>
 
     <!-- 主要內容 -->
-	<div class="tab-content" id="myTabContent">
-        <div class="container product-detail  tab-pane fade show active" id="intro" role="tabpanel" aria-labelledby="intro-tab">
+    <div class="tab-content" id="myTabContent">
+        <div class="container product-detail  tab-pane fade show active" id="intro" role="tabpanel"
+            aria-labelledby="intro-tab">
             <div class="row justify-content-center">
                 <div class="col-lg-11 col-xl-9 col-11 ">
-                     <!-- 產品品名 -->
+                    <!-- 產品品名 -->
                     <div class=" text-center text-color_sec fw-bold border border-4 py-4 fs-2 border-color_sec my-5">
                         印尼北蘇門答臘 黃金曼特寧
                     </div>
                     <!-- 產品影片or圖片 -->
                     <div class="ratio ratio-16x9">
-                        <iframe  src="https://www.youtube.com/embed/h823_Ij6mF8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                 
+                        <iframe src="https://www.youtube.com/embed/p6f2u-y29NY" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                     </div>
 
                     <div class="row my-5 g-0">
@@ -228,33 +249,39 @@
                             <!-- 產品圖片A -->
                             <div class="ratio ratio-16x9   mx-auto">
                                 <img class="cover "
-                                src="https://images.unsplash.com/photo-1619418916885-33b7f6e14397?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="">
+                                    src="https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                    alt="">
                             </div>
                         </div>
-                            <!-- 產品介紹A-->
-                        <div class="col-lg-6 col-12  d-flex justify-content-center align-items-center bg-yellow rounded-3">
+                        <!-- 產品介紹A-->
+                        <div
+                            class="col-lg-6 col-12  d-flex justify-content-center align-items-center bg-yellow rounded-3">
                             <p class="text-center fs-3 lh-base   p-5">
                                 重要的產品介紹產品介紹，重要的產品介紹產品介紹，重要的產品介紹產品介紹，重要的產品介紹產品介紹，重要的產品介紹產品介紹，
-                            </p>                        
+                            </p>
                         </div>
                     </div>
 
                     <!-- 詳細產品介紹-->
                     <div class=" text-center p-5 border border-4 fs-3 border-yellow my-5 lh-base">
-                        詳細產品介紹     詳細產品介紹詳細產品介紹<br>
-                        詳細產品介紹     詳細產品介紹詳細產品介紹<br>
-                        詳細產品介紹     詳細產品介紹詳細產品介紹<br>
-                        詳細產品介紹     詳細產品介紹詳細產品介紹<br>
-                        詳細產品介紹     詳細產品介紹詳細產品介紹<br>
+                        詳細產品介紹 詳細產品介紹詳細產品介紹<br>
+                        詳細產品介紹 詳細產品介紹詳細產品介紹<br>
+                        詳細產品介紹 詳細產品介紹詳細產品介紹<br>
+                        詳細產品介紹 詳細產品介紹詳細產品介紹<br>
+                        詳細產品介紹 詳細產品介紹詳細產品介紹<br>
                     </div>
 
-                    <div class="ratio ratio-16x9 contain  mx-auto">
+                    <div class=" contain  mx-auto">
                         <!-- 產品圖片B -->
-                        <img class="cover "src="https://images.unsplash.com/photo-1619431843897-4676bff0c286?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="">
+                        <img class="cover "
+                            src="https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                            alt="">
                     </div>
-                    <div class="ratio ratio-16x9 contain  mx-auto my-5">
+                    <div class=" contain  mx-auto my-5">
                         <!-- 產品圖片C -->
-                        <img class="cover "src="https://images.unsplash.com/photo-1619431843897-4676bff0c286?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="">
+                        <img class="cover "
+                            src="https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                            alt="">
                     </div>
                     <!-- 學長的故事 -->
                     <div class="bg-yellow rouded-3 text-center py-5">
@@ -262,9 +289,9 @@
                         <h3 class="fs-2 fw-bold"><span> xx學長 </span>小故事</h3>
                         <div class="my-4 story-content">
                             <!-- 故事主標 -->
-                            <div class="bg-white fs-4 py-4 text-color_sec">主標 4 窩主標 4 窩主標 4 窩主標 4 窩</div>
+                            <div class="bg-white fs-4 py-4 text-color_sec">主標</div>
                             <!-- 故事內容 -->
-                            <div class="bg-color_sec p-5 fs-4 lh-base" >
+                            <div class="bg-color_sec p-5 fs-4 lh-base">
                                 我是故事我是故事我是故事我是故事我是故事我是故事
                                 我是故事我是故事我是故事我是故事我是故事我是故事
                                 我是故事我是故事我是故事我是故事我是故事我是故事
@@ -281,15 +308,17 @@
                         <h3 class="fs-2 fw-bold my-5">評價回饋</h3>
                         <!-- 評價資料 -->
                         <div class="row mx-0 mx-lg-4 mb-5 g-0">
-                            <div class="col-2 d-flex justify-content-center align-items-lg-center align-items-lg-start position-relative">
-                                <img class="profile-photo position-absolute contain" src="https://attach.setn.com/newsimages/2020/03/11/2450111-PH.jpg" alt="">
+                            <div
+                                class="col-2 d-flex justify-content-center align-items-lg-center align-items-lg-start position-relative">
+                                <img class="profile-photo position-absolute contain"
+                                    src="https://images.pexels.com/photos/842811/pexels-photo-842811.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=300&w=400" alt="">
                             </div>
                             <div class="col-8 d-flex justify-content-center flex-column ">
                                 <div class="d-flex fw-bold flex-lg-row  flex-column">
                                     <div class="d-flex justify-content-start ">
                                         <!-- 評價人資訊 -->
                                         <span class="fs-4">MBA110級</span>
-                                        <span class="mx-2 fs-4">夏宗麟</span>
+                                        <span class="mx-2 fs-4">王小明</span>
                                     </div>
                                     <ul class="d-flex mt-1">
                                         <li><i class="fas fa-star text-color_sec"></i></li>
@@ -303,24 +332,29 @@
                                 </div>
                                 <div class="text-start mt-3 evaluation-content">
                                     <!-- 評價內容 -->
-                                    <p class="lh-base">宗麟貓貓萬歲，宗麟貓貓萬歲，宗麟貓貓萬歲，宗麟貓貓萬歲，宗麟貓貓萬歲，宗麟貓貓萬歲，宗麟貓貓萬歲，宗麟貓貓萬歲，宗麟貓貓萬歲，宗麟貓貓萬歲，</p>
+                                    <p class="lh-base">
+                                        留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言</p>
                                 </div>
                             </div>
                             <div class="col-2 d-flex justify-content-center align-items-center">
-                                <img class="contian w-75" src="https://images.unsplash.com/photo-1512151004335-d5b6c2ff7e12?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1049&q=80" alt="">
+                                <img class="contian w-75"
+                                    src="https://images.unsplash.com/photo-1512151004335-d5b6c2ff7e12?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1049&q=80"
+                                    alt="">
                             </div>
                         </div>
                         <!-- 評價資料結束 -->
-    
+
                         <div class="row mx-0 mx-lg-4 mb-5 g-0">
-                            <div class="col-2 d-flex justify-content-center align-items-lg-center align-items-lg-start position-relative">
-                                <img class="profile-photo position-absolute contain" src="https://attach.setn.com/newsimages/2020/03/11/2450111-PH.jpg" alt="">
+                            <div
+                                class="col-2 d-flex justify-content-center align-items-lg-center align-items-lg-start position-relative">
+                                <img class="profile-photo position-absolute contain"
+                                    src="https://images.pexels.com/photos/842811/pexels-photo-842811.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=300&w=400" alt="">
                             </div>
                             <div class="col-8 d-flex justify-content-center flex-column ">
                                 <div class="d-flex fw-bold flex-lg-row  flex-column">
                                     <div class="d-flex justify-content-start ">
                                         <span class="fs-4">MBA110級</span>
-                                        <span class="mx-2 fs-4">夏宗麟</span>
+                                        <span class="mx-2 fs-4">王小明</span>
                                     </div>
                                     <ul class="d-flex mt-1">
                                         <li><i class="fas fa-star text-color_sec"></i></li>
@@ -331,18 +365,21 @@
                                     </ul>
                                 </div>
                                 <div class="text-start mt-3 evaluation-content">
-                                    <p class="lh-base">宗麟貓貓萬歲，宗麟貓貓萬歲，宗麟貓貓萬歲，宗麟貓貓萬歲，宗麟貓貓萬歲，宗麟貓貓萬歲，宗麟貓貓萬歲，宗麟貓貓萬歲，宗麟貓貓萬歲，宗麟貓貓萬歲，</p>
+                                    <p class="lh-base">
+                                        留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言</p>
                                 </div>
                             </div>
                             <div class="col-2 d-flex justify-content-center align-items-center">
-                                <img class="contian w-75" src="https://images.unsplash.com/photo-1512151004335-d5b6c2ff7e12?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1049&q=80" alt="">
+                                <img class="contian w-75"
+                                    src="https://images.unsplash.com/photo-1512151004335-d5b6c2ff7e12?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1049&q=80"
+                                    alt="">
                             </div>
                         </div>
                         <button class="btn btn-color_sec text-white fs-4  px-5 mb-5">看更多評論</button>
                     </div>
                 </div>
             </div>
-            
+
         </div>
         <!-- 評價回饋 -->
         <div class="container    tab-pane fade" id="evaluation" role="tabpanel" aria-labelledby="evaluation-tab">
@@ -353,15 +390,17 @@
                         <h3 class="fs-2 fw-bold my-5">評價回饋</h3>
                         <!-- 評價資料 -->
                         <div class="row mx-0 mx-lg-4 mb-5 g-0">
-                            <div class="col-2 d-flex justify-content-center align-items-lg-center align-items-lg-start position-relative">
-                                <img class="profile-photo position-absolute contain" src="https://attach.setn.com/newsimages/2020/03/11/2450111-PH.jpg" alt="">
+                            <div
+                                class="col-2 d-flex justify-content-center align-items-lg-center align-items-lg-start position-relative">
+                                <img class="profile-photo position-absolute contain"
+                                    src="https://images.pexels.com/photos/842811/pexels-photo-842811.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=300&w=400" alt="">
                             </div>
                             <div class="col-8 d-flex justify-content-center flex-column ">
                                 <div class="d-flex fw-bold flex-lg-row  flex-column">
                                     <div class="d-flex justify-content-start ">
                                         <!-- 評價人資訊 -->
                                         <span class="fs-4">MBA110級</span>
-                                        <span class="mx-2 fs-4">夏宗麟</span>
+                                        <span class="mx-2 fs-4">王小明</span>
                                     </div>
                                     <ul class="d-flex mt-1">
                                         <li><i class="fas fa-star text-color_sec"></i></li>
@@ -373,24 +412,29 @@
                                 </div>
                                 <div class="text-start mt-3 evaluation-content">
                                     <!-- 評價內容 -->
-                                    <p class="lh-base">宗麟貓貓萬歲，宗麟貓貓萬歲，宗麟貓貓萬歲，宗麟貓貓萬歲，宗麟貓貓萬歲，宗麟貓貓萬歲，宗麟貓貓萬歲，宗麟貓貓萬歲，宗麟貓貓萬歲，宗麟貓貓萬歲，</p>
+                                    <p class="lh-base">
+                                        留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言</p>
                                 </div>
                             </div>
                             <div class="col-2 d-flex justify-content-center align-items-center">
-                                <img class="contian w-75" src="https://images.unsplash.com/photo-1512151004335-d5b6c2ff7e12?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1049&q=80" alt="">
+                                <img class="contian w-75"
+                                    src="https://images.unsplash.com/photo-1512151004335-d5b6c2ff7e12?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1049&q=80"
+                                    alt="">
                             </div>
                         </div>
                         <!-- 評價資料結束 -->
-    
+
                         <div class="row mx-0 mx-lg-4 mb-5 g-0">
-                            <div class="col-2 d-flex justify-content-center align-items-lg-center align-items-lg-start position-relative">
-                                <img class="profile-photo position-absolute contain" src="https://attach.setn.com/newsimages/2020/03/11/2450111-PH.jpg" alt="">
+                            <div
+                                class="col-2 d-flex justify-content-center align-items-lg-center align-items-lg-start position-relative">
+                                <img class="profile-photo position-absolute contain"
+                                    src="https://images.pexels.com/photos/842811/pexels-photo-842811.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=300&w=400" alt="">
                             </div>
                             <div class="col-8 d-flex justify-content-center flex-column ">
                                 <div class="d-flex fw-bold flex-lg-row  flex-column">
                                     <div class="d-flex justify-content-start ">
                                         <span class="fs-4">MBA110級</span>
-                                        <span class="mx-2 fs-4">夏宗麟</span>
+                                        <span class="mx-2 fs-4">王小明</span>
                                     </div>
                                     <ul class="d-flex mt-1">
                                         <li><i class="fas fa-star text-color_sec"></i></li>
@@ -401,14 +445,17 @@
                                     </ul>
                                 </div>
                                 <div class="text-start mt-3 evaluation-content">
-                                    <p class="lh-base">宗麟貓貓萬歲，宗麟貓貓萬歲，宗麟貓貓萬歲，宗麟貓貓萬歲，宗麟貓貓萬歲，宗麟貓貓萬歲，宗麟貓貓萬歲，宗麟貓貓萬歲，宗麟貓貓萬歲，宗麟貓貓萬歲，</p>
+                                    <p class="lh-base">
+                                        留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言留言</p>
                                 </div>
                             </div>
                             <div class="col-2 d-flex justify-content-center align-items-center">
-                                <img class="contian w-75" src="https://images.unsplash.com/photo-1512151004335-d5b6c2ff7e12?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1049&q=80" alt="">
+                                <img class="contian w-75"
+                                    src="https://images.unsplash.com/photo-1512151004335-d5b6c2ff7e12?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1049&q=80"
+                                    alt="">
                             </div>
                         </div>
-                        
+
                         <button class="btn btn-color_sec text-white fs-4  px-5 mb-5">看更多評論</button>
                     </div>
                 </div>
@@ -423,20 +470,24 @@
                         <!-- 問題資料 -->
                         <div class="row mb-5 g-0 text-start mx-lg-5 mx-2  justify-content-center">
                             <!-- 問題細節 -->
-                            <div class="col-11 border-color_sec border-bottom border-5 justify-content-center mt-5 pb-2">
+                            <div
+                                class="col-11 border-color_sec border-bottom border-5 justify-content-center mt-5 pb-2">
                                 <h1 class="fs-2 fw-bold">Q：畢業歌的開銷在哪看？</h1>
                                 <p class="fs-3 mt-4 lh-base">可以從商品介紹頁面下載最新開銷明細，可以從商品介紹頁面下載最新開銷明細，可以從商品介紹頁面下載最新開銷明細</p>
                             </div>
-    
-                            <div class="col-11 border-color_sec border-bottom border-5 justify-content-center mt-5 pb-2">
+
+                            <div
+                                class="col-11 border-color_sec border-bottom border-5 justify-content-center mt-5 pb-2">
                                 <h1 class="fs-2 fw-bold">Q：畢業歌的開銷在哪看？</h1>
                                 <p class="fs-3 mt-4 lh-base">可以從商品介紹頁面下載最新開銷明細，可以從商品介紹頁面下載最新開銷明細，可以從商品介紹頁面下載最新開銷明細</p>
                             </div>
-                            <div class="col-11 border-color_sec border-bottom border-5 justify-content-center mt-5 pb-2">
+                            <div
+                                class="col-11 border-color_sec border-bottom border-5 justify-content-center mt-5 pb-2">
                                 <h1 class="fs-2 fw-bold">Q：畢業歌的開銷在哪看？</h1>
                                 <p class="fs-3 mt-4 lh-base">可以從商品介紹頁面下載最新開銷明細，可以從商品介紹頁面下載最新開銷明細，可以從商品介紹頁面下載最新開銷明細</p>
                             </div>
-                            <div class="col-11 border-color_sec border-bottom border-5 justify-content-center mt-5 pb-2">
+                            <div
+                                class="col-11 border-color_sec border-bottom border-5 justify-content-center mt-5 pb-2">
                                 <h1 class="fs-2 fw-bold">Q：畢業歌的開銷在哪看？</h1>
                                 <p class="fs-3 mt-4 lh-base">可以從商品介紹頁面下載最新開銷明細，可以從商品介紹頁面下載最新開銷明細，可以從商品介紹頁面下載最新開銷明細</p>
                             </div>
@@ -444,7 +495,7 @@
                     </div>
                 </div>
             </div>
-            
+
         </div>
 
         <div class="container product-contact  tab-pane fade" id="contact" ole="tabpanel" aria-labelledby="contact-tab">
@@ -452,24 +503,31 @@
                 <div class="col-lg-11 col-xl-9 col-11 ">
                     <div class="product-evaluation border border-color_sec border-5 rouded-3 text-center my-5">
                         <h3 class="fs-1 fw-bold mt-5 text-color_sec">聯絡賣家</h3>
-                        <div class="row mb-5 g-0 text-start mx-lg-5 mx-md-3 mx-2  justify-content-center bg-yellow py-5 contact-bg my-5 ">
-                            
-                            <div class="col-lg-5 col-11 contact-person justify-content-center d-flex  flex-column align-items-center">
+                        <div
+                            class="row mb-5 g-0 text-start mx-lg-5 mx-md-3 mx-2  justify-content-center bg-yellow py-5 contact-bg my-5 ">
+
+                            <div
+                                class="col-lg-5 col-11 contact-person justify-content-center d-flex  flex-column align-items-center">
                                 <!-- 賣家照片、姓名 -->
-                                <img class="cover" src="https://attach.setn.com/newsimages/2020/03/11/2450111-PH.jpg" alt="">
-                                <p class="fs-1 fw-bold text-color_sec mt-lg-5 mt-3">夏宗霖</p>
+                                <img class="cover" src="https://images.pexels.com/photos/842811/pexels-photo-842811.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=300&w=400"
+                                    alt="">
+                                <p class="fs-1 fw-bold text-color_sec mt-lg-5 mt-3">王小明</p>
                             </div>
                             <div class="col-lg-7 col-10 lh-base mt-lg-0 mt-3 text-lg-start text-center ms-lg-0 ">
-                                <h3 class="fs-4 p-2 px-4 fw-bold text-color_sec border border-color_sec d-inline border-3">學長聯絡資訊</h3>
+                                <h3
+                                    class="fs-4 p-2 px-4 fw-bold text-color_sec border border-color_sec d-inline border-3">
+                                    學長聯絡資訊</h3>
                                 <!-- 學長的聯絡資訊 -->
                                 <ul class="my-3 ">
                                     <li class="fs-4">系級：企業管理所 110 級</li>
                                     <li class="fs-4">電話： 0912345678</li>
                                     <li class="fs-4 ">信箱： xxxxxxxx@gmail.com</li>
                                     <li class="fs-4 ">LINE： catcat_code00</li>
-                                    <li class="fs-4 ">FB ： 夏宗麟</li>
+                                    <li class="fs-4 ">FB ： 王小明</li>
                                 </ul>
-                                <h3 class="fs-4 p-2 px-4  fw-bold text-color_sec border border-color_sec d-inline border-3 mt-2">公司聯絡資訊</h3>
+                                <h3
+                                    class="fs-4 p-2 px-4  fw-bold text-color_sec border border-color_sec d-inline border-3 mt-2">
+                                    公司聯絡資訊</h3>
                                 <ul class="my-3 ">
                                     <!-- 學長的公司資訊 -->
                                     <li class="fs-4 ">公司電話：(02) 26xxxxxx</li>
@@ -480,29 +538,32 @@
                     </div>
                 </div>
             </div>
-            
+
         </div>
-    
+
     </div>
-	<div class="contact-senior">
-        <div class="modal  fade  -" id="contact-senior" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="contact-senior">
+        <div class="modal  fade  -" id="contact-senior" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <button type="button" class="btn-close float-end" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <button type="button" class="btn-close float-end" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
                     </div>
                     <div class="modal-body ">
                         <div class="text-center d-flex justify-content-start align-items-center">
                             <h5 class="modal-title fs-2" id="exampleModalLabel">提案人：</h5>
                             <!-- 提案人照片、名字 -->
-                            <img class="contact-photo cover mx-1" src="https://attach.setn.com/newsimages/2020/03/11/2450111-PH.jpg" alt="">
-                            <p class="fs-3">夏宗霖</p>
+                            <img class="contact-photo cover mx-1"
+                                src="https://images.pexels.com/photos/842811/pexels-photo-842811.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=300&w=400" alt="">
+                            <p class="fs-3">王小明</p>
                         </div>
                         <form action="" class="mt-2">
                             <label for="contact-context" class="d-block mb-2 fs-5"> 訊息內容：</label>
-                            <textarea name="contact-context" id=""  rows="10" class="w-100"></textarea>
+                            <textarea name="contact-context" id="" rows="10" class="w-100"></textarea>
                             <button type="submit" class="btn btn-color_sec text-white mt-2 float-end">送出訊息</button>
-                        </form> 
+                        </form>
                     </div>
                 </div>
             </div>
@@ -511,30 +572,38 @@
 
     <!-- footer -->
     <footer>
-        <div class="container-fluid bg-offline " >
+        <div class="container-fluid bg-offline ">
             <div class="container">
                 <div class="row  text-dark  justify-content-around">
-                    <div class="col-lg-4 col-12  mt-0 mt-lg-4 mb-4  d-lg-block d-flex flex-column align-items-center order-2 order-lg-1">
+                    <div
+                        class="col-lg-4 col-12  mt-0 mt-lg-4 mb-4  d-lg-block d-flex flex-column align-items-center order-2 order-lg-1">
                         <div class="">
                             <span class="footer_title Hei fw-bold  cus_shadow">Contact us</span>
-                            <a href="line://ti/p/@359zcdid"  target="_blank" class=" mx-3  text-dark  cus_shadow "><i class="fab fa-line" style="font-size: 25px;"></i></a>
-                            <a href="" class=" text-dark cus_shadow" data-bs-toggle="modal" data-bs-target="#email_us"><i class="far fa-envelope  " style="font-size: 25px;"></i></a>
+                            <a href="line://ti/p/@359zcdid" target="_blank" class=" mx-3  text-dark  cus_shadow "><i
+                                    class="fab fa-line" style="font-size: 25px;"></i></a>
+                            <a href="" class=" text-dark cus_shadow" data-bs-toggle="modal"
+                                data-bs-target="#email_us"><i class="far fa-envelope  "
+                                    style="font-size: 25px;"></i></a>
                         </div>
-                        <ul class="" >
+                        <ul class="">
                             <li class="mt-4 text-lg-start text-center">高雄市804鼓山區蓮海路70號</li>
                             <li class="my-2 text-lg-start text-center">nsysugo@gmail.com</li>
-                            <li class=" text-lg-start text-center">(07)525-2000  #6687、#6688、#6689</li>
+                            <li class=" text-lg-start text-center">(07)525-2000 #6687、#6688、#6689</li>
                         </ul>
                     </div>
-                    <div class="col-lg-4 col-12  my-4  d-lg-block d-flex flex-column align-items-center order-1 order-lg-2">
+                    <div
+                        class="col-lg-4 col-12  my-4  d-lg-block d-flex flex-column align-items-center order-1 order-lg-2">
                         <p class="footer_title fw-bold  cus_shadow">還沒加入中山購？ </p>
                         <p class="footer_second my-3 fw-bolder  cus_shadow">輸入電子郵件立即加入</p>
                         <div class="row justify-content-lg-start justify-content-center">
                             <div class="col-lg-6 col-12">
-                                <input name="fast_email" type="email" class="form-control cus_shadow email py-2" placeholder="enter your email address" aria-label="Username" aria-describedby="basic-addon1">
+                                <input name="fast_email" type="email" class="form-control cus_shadow email py-2"
+                                    placeholder="enter your email address" aria-label="Username"
+                                    aria-describedby="basic-addon1">
                             </div>
                             <div class="col-lg-5 col-6 mt-lg-0 mt-2 text-lg-start text-center">
-                                <button id="fast_r" type="button" class="btn btn-second  cus_shadow" data-bs-toggle="modal" data-bs-target="#register" >立即註冊</button>
+                                <button id="fast_r" type="button" class="btn btn-second  cus_shadow"
+                                    data-bs-toggle="modal" data-bs-target="#register">立即註冊</button>
                             </div>
                         </div>
                     </div>
@@ -546,24 +615,29 @@
     <div class="email_us">
         <div class="modal fade " id="email_us" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered ">
-                    <div class="modal-content">
+                <div class="modal-content">
                     <div class="text-end">
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="d-flex justify-content-center align-items-center">
-                        <i class="far fa-envelope fs-2 me-2 " ></i>
+                        <i class="far fa-envelope fs-2 me-2 "></i>
                         <p class="d-inline fs-2 ">聯絡我們</p>
                     </div>
                     <div class="modal-body mx-5">
                         <form id="contact-form" autocomplete="off">
-                        <input type="text" class="form-control py-2 my-3 inner_shadow" placeholder="姓名*" name="contact_name" required="required">
-                        <input type="text" class="form-control py-2 my-3 inner_shadow" placeholder="聯絡電話*" name="contact_phone" required>
-                        <input type="email" class="form-control py-2 my-3 inner_shadow" placeholder="信箱*" name="contact_mail" required>
-                        <input type="text" class="form-control py-2 mt-3 inner_shadow" placeholder="訊息標題*" name="contact_title" required>
-                        <textarea class="form-control mt-3 inner_shadow" id="contact_content" cols="30" rows="5" placeholder="訊息內容" required></textarea>
-                        <div class="d-flex justify-content-end mt-3">
-                            <button class="btn btn-second px-5 cus_shadow" >確定送出</button>
-                        </div>
+                            <input type="text" class="form-control py-2 my-3 inner_shadow" placeholder="姓名*"
+                                name="contact_name" required="required">
+                            <input type="text" class="form-control py-2 my-3 inner_shadow" placeholder="聯絡電話*"
+                                name="contact_phone" required>
+                            <input type="email" class="form-control py-2 my-3 inner_shadow" placeholder="信箱*"
+                                name="contact_mail" required>
+                            <input type="text" class="form-control py-2 mt-3 inner_shadow" placeholder="訊息標題*"
+                                name="contact_title" required>
+                            <textarea class="form-control mt-3 inner_shadow" id="contact_content" cols="30" rows="5"
+                                placeholder="訊息內容" required></textarea>
+                            <div class="d-flex justify-content-end mt-3">
+                                <button class="btn btn-second px-5 cus_shadow">確定送出</button>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -572,24 +646,20 @@
 
         <div class="modal fade " id="email_confirm" tabindex="-1" aria-labelledby="register_confirm" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered ">
-            <div class="modal-content">
-                <div class="text-end">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body mx-5 d-flex flex-column justify-content-center align-items-center">
-                    <img src="/img/check.png" alt="" class="w-25">
-                    <p class="fs-1 my-3 fw-bold">填寫成功</p>
-                    <p class="text-secondary my-1 text-center">感謝您的寶貴意見<br>我們將於工作日由專人以郵件回覆您的問題</p>
-                </div>
+                <div class="modal-content">
+                    <div class="text-end">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body mx-5 d-flex flex-column justify-content-center align-items-center">
+                        <img src="/img/check.png" alt="" class="w-25">
+                        <p class="fs-1 my-3 fw-bold">填寫成功</p>
+                        <p class="text-secondary my-1 text-center">感謝您的寶貴意見<br>我們將於工作日由專人以郵件回覆您的問題</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
- 
-    <!-- 聯絡提案人 (這邊之後要檢查有沒有登入) -->
-    
-
-       <!-- Line -->
+    <!-- Line -->
     <div class="line_fixed ">
         <a href="line://ti/p/@359zcdid" target="_blank">
             <div class="position-absolute bottom-0 end-0 border-2 cus_shadow " width="50px">
@@ -600,17 +670,33 @@
     <!-- aos -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
     <script>
         AOS.init({
-                offset: 200,
-                duration:500,
-                once: true
-            });
+            offset: 200,
+            duration: 500,
+            once: true
+        });
+        $('.slider-for').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.slider-nav'
+        });
+        $('.slider-nav').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            asNavFor: '.slider-for',
+            dots: true,
+            focusOnSelect: true
+        });
     </script>
-    
+
     <script src="product.js"></script>
 
 </body>
-</html>
 
+</html>
